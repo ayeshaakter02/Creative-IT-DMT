@@ -2,29 +2,35 @@
 
 @theme {
   --default-font-family: "Inter", sans-serif;
-  --color-dmt-black1: #1E1E1F;
-  --color-dmt-black2: #38435C;
-  --color-dmt-brand1-lg1: #FF8079;
-  --color-dmt-brand1-lg2: #FF1E1E;
-  --color-dmt-brand2: #DF3636;
-  --color-dmt-brand3: #FFE9E9;
-  --color-dmt-blue1: #4285FA;
-  --color-dmt-blue2: #F1F5FF;
-  --color-dmt-green1: #34A853;
-  --color-dmt-green2: #EFF8F2;
-  --color-dmt-yellow1: #F88513;
-  --color-dmt-yellow2: #FDF5E6;
-  --color-dmt-gray1: #6F7B88;
-  --color-dmt-gray2: #A9B0B8;
-  --color-dmt-gray3: #E9F0F8;
-  --color-dmt-lin1: #F88513;
-  --color-dmt-lin2: #34A853;
-  --color-dmt-ratings-lg1: #FFA600;
-  --color-dmt-ratings-lg2: #FF6C10;
+  --color-dmt-black1: #1e1e1f;
+  --color-dmt-black2: #38435c;
+  --color-dmt-brand1-lg1: #ff8079;
+  --color-dmt-brand1-lg2: #ff1e1e;
+  --color-dmt-brand2: #df3636;
+  --color-dmt-brand3: #ffe9e9;
+  --color-dmt-blue1: #4285fa;
+  --color-dmt-blue2: #f1f5ff;
+  --color-dmt-green1: #34a853;
+  --color-dmt-green2: #eff8f2;
+  --color-dmt-yellow1: #f88513;
+  --color-dmt-yellow2: #fdf5e6;
+  --color-dmt-gray1: #6f7b88;
+  --color-dmt-gray2: #a9b0b8;
+  --color-dmt-gray3: #e9f0f8;
+  --color-dmt-lin1: #f88513;
+  --color-dmt-lin2: #34a853;
+  --color-dmt-ratings-lg1: #ffa600;
+  --color-dmt-ratings-lg2: #ff6c10;
 }
 
 @layer base {
   .container {
     @apply w-400 mx-auto;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-3 py-3 text-base sm:px-4 sm:py-4 sm:text-lg bg-dmt-blue1 text-white font-medium leading-[1.2] rounded-[10px];
   }
 }
