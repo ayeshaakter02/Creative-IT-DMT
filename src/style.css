@@ -22,3 +22,9 @@
   --color-dmt-ratings-lg1: #FFA600;
   --color-dmt-ratings-lg2: #FF6C10;
 }
+
+@layer base {
+  .container {
+    @apply w-400 mx-auto;
+  }
+}
