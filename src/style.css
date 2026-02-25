@@ -25,9 +25,6 @@
 
 @layer base {
   .container {
-    @apply w-400 mx-auto;
-  }
-  .sub-container {
     @apply w-285 mx-auto
   }
 }
