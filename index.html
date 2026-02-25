@@ -23,7 +23,7 @@
       <div class="flex justify-between items-center py-4 px-4 sm:px-0">
         <!-- Logo -->
         <div class="w-28 sm:w-36 lg:w-44">
-          <img src="./src/assets/images/logo.png" alt="Logo" class="w-full h-auto" />
+          <img src="./src/assets/images/hero/logo.png" alt="Logo" class="w-full h-auto" />
         </div>
 
         <!-- Desktop Menu -->
@@ -35,14 +35,10 @@
           <li><a href="#">Title</a></li>
         </ul>
         <!-- Desktop Button -->
-        <button class="btn hidden sm:flex">
+        <button class="btn px-3 sm:px-4 hidden sm:flex">
           Get Enroll
           <span class="ml-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14" />
-              <path d="M15 8l4 4-4 4" />
-            </svg>
+            <img src="./src/assets/images/hero/btn-arrow-right.svg" alt="">
           </span>
         </button>
 
@@ -67,109 +63,201 @@
           <li class="my-1.5"><a href="#">Title</a></li>
         </ul>
         <!-- mobile Button -->
-        <button class="btn flex w-32.5">
+        <button class="btn px-3 flex w-32.5">
           Get Enroll
           <span class="ml-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14" />
-              <path d="M15 8l4 4-4 4" />
-            </svg>
+            <img src="./src/assets/images/hero/btn-arrow-right.svg" alt="">
           </span>
         </button>
       </div>
     </nav>
     <!-- navbar end -->
     <!-- banner start -->
-    <section class="h-200.5 relative bg-cover bg-center no-repeat"
-      style="background-image: url('./src/assets/images/hero-bg.png'); ">
-      <div class="container flex items-center">
-        <div class="grid md:grid-cols-2 gap-[66px] items-center mt-20.5">
+        <section 
+  class="relative bg-cover bg-center bg-no-repeat"
+  style="background-image: url('./src/assets/images/hero/hero-bg.png');"
+>
+  <div class="container px-4">
+    
+    <div class="grid lg:grid-cols-2 gap-16.5 items-center">
 
-          <!-- Left Content -->
-          <div class="text-black">
-            <div class="flex py-2 pl-3 bg-white">
-              <img class="w-5 h-5" src="./src/assets/images/fire.png" alt="">
-              <p class="inline-block bg-white/10 ml-3 py-2 rounded-full text-sm mb-4">
-                Some overline text will be here with excitement
-              </p>
-            </div>
+      <!-- LEFT CONTENT -->
+      <div class="max-w-153.25 mx-auto lg:mx-0 text-center lg:text-left">
 
-            <h1 class="w-152.75 mt-2 text-4xl md:text-7xl font-extrabold leading-[1.2]">
-              Title Will Be Here
-              <br>
-              <span class="text-dmt-blue1 mt-2">Digital Marketing</span>
-            </h1>
- 
-            <div class="mt-5 flex gap-4">
-              <button class="banner-label text-dmt-green1 border-dmt-green1 bg-dmt-green2">
-                <p>CTA Label</p>
-                <img src="./src/assets/images/banner-heart-rate-monitor.svg" alt="">
-              </button>
-              <button class="banner-label text-dmt-yellow1 border-dmt-yellow1 bg-dmt-yellow2">
-                <p>CTA Label</p>
-                <img src="./src/assets/images/banner-users.svg" alt="">
-              </button>
-              <button class="banner-label text-dmt-brand2 border-dmt-brand2 bg-dmt-brand3">
-                <p>CTA Label</p>
-                <img src="./src/assets/images/banner-crown.svg" alt="">
-              </button>
-            </div>
+        <!-- Overline -->
+        <div class="inline-flex items-center gap-1 px-3 py-2 rounded-full bg-white shadow-[0_0_40px_rgba(176,200,232,0.4)]">
+          <img class="w-5 h-5" src="./src/assets/images/hero/fire.png" alt="">
+          <p class="text-xs italic text-dmt-black2 leading-[150%]">
+            Some overline text will be here with excitement
+          </p>
+        </div>
 
-            <p class="mt-5 text-lg font-normal max-w-lg text-dmt-black2">
-              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. Felis posuere
+        <!-- Heading -->
+        <h1 class="mt-2 text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-[120%] text-dmt-black1">
+          Title Will Be Here <br />
+          <span class="text-dmt-blue1 mt-2">Digital Marketing</span>
+        </h1>
+
+        <!-- Label Buttons -->
+        <div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-5">
+          <button class="banner-label text-dmt-green1 border-dmt-green1 bg-dmt-green2">
+            CTA Label
+            <img src="./src/assets/images/banner-heart-rate-monitor.svg" alt="">
+          </button>
+
+          <button class="banner-label text-dmt-yellow1 border-dmt-yellow1 bg-dmt-yellow2">
+            CTA Label
+            <img src="./src/assets/images/banner-users.svg" alt="">
+          </button>
+
+          <button class="banner-label text-dmt-brand2 border-dmt-brand2 bg-dmt-brand3">
+            CTA Label
+            <img src="./src/assets/images/hero/banner-crown.svg" alt="">
+          </button>
+        </div>
+
+        <!-- Description -->
+        <p class="mt-5 text-dmt-black2 max-w-xl mx-auto lg:mx-0 text-lg font-normal">
+          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. Felis posuere
               maecenas interdum sit cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis. Diam diam tellus
               ultricies. Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. Felis
               posuere maecenas interdum sit cras.
-            </p>
+        </p>
 
-            <div class="flex gap-4 mt-6">
-              <button href="#" class="btn px-6 py-3 rounded-lg font-semibold transition">
-                CTA Label Here
-                </a>
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-6">
+          <button class="btn flex px-6 py-3 rounded-lg font-semibold transition">
+            CTA Label Here
+            <img class="w-5 h-5 ml-2" src="./src/assets/images/hero/banner-crown2.svg" alt="">
+          </button>
 
-                <button href="#" class="btn  px-6 py-3 rounded-lg font-semibold transition">
-                  Download Curriculum
-                  </a>
+          <button class="btn flex px-6 py-3 rounded-lg font-semibold transition">
+            Download Curriculum
+            <img class="w-5 h-5 ml-2" src="./src/assets/images/hero/banner-arrow-down.svg" alt="">
+          </button>
+        </div>
+
+      </div>
+
+      <!-- RIGHT FORM -->
+      <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 w-full max-w-115.25 mx-auto mt-12 mb-6.75 animate-slide">
+
+        <h3 class="text-[28px] font-semibold text-center text-dmt-black1 leading-[150%]">
+          Book Your Seat Now
+        </h3>
+
+        <p class="text-center text-dmt-black2 mt-1 mb-8 font-normal leading-[150%]">
+          Start building your professional career for free
+        </p>
+        <form class="space-y-5">
+            <!-- Full Name -->
+          <div>
+            <label class="form-label">Your Full Name</label>
+            <div class="relative">
+              <img class="input-icon " src="./src/assets/images/hero/banner-input-user.svg" alt="">
+              <input type="text" placeholder="Enter Here" class="form-input" />
             </div>
           </div>
 
-          <!-- Right Form -->
-          <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full mx-auto">
-            <h3 class="text-2xl font-bold text-center mb-2">
-              Book Your Seat Now
-            </h3>
-            <p class="text-gray-500 text-center mb-6">
-              Start building your professional career for free
-            </p>
-
-            <form class="space-y-4">
-              <input type="text" placeholder="Your Full Name"
-                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none">
-
-              <input type="email" placeholder="Email Address"
-                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none">
-
-              <input type="text" placeholder="Phone Number"
-                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none">
-
-              <button type="submit"
-                class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-semibold transition">
-                CTA Label Here →
-              </button>
-            </form>
+          <!-- Email -->
+          <div>
+            <label class="form-label">Email Address</label>
+            <div class="relative">
+              <img class="input-icon" src="./src/assets/images/hero/input-mail.svg" alt="">
+              <input type="email" placeholder="Enter Here" class="form-input" />
+            </div>
           </div>
 
-        </div>
+          <!-- Phone -->
+          <div>
+            <label class="form-label">Phone Number</label>
+            <div class="relative">
+              <img class="input-icon" src="./src/assets/images/hero/input-phone-call.svg" alt="">
+              <input type="tel" placeholder="Enter Here" class="form-input" />
+            </div>
+          </div>
+
+          <!-- Career Goals -->
+          <div>
+            <label class="form-label">Career Goals</label>
+            <div class="relative">
+              <img class="input-icon" src="./src/assets/images/hero/input-award.svg" alt="">
+              <input type="text" placeholder="Enter Here" class="form-input" />
+            </div>
+          </div>
+
+          <!-- Submit -->
+                <button 
+        type="submit"
+        class="btn flex justify-center sm:w-60 xl:w-103.25 mt-6 mb-4 py-4.25 sm:px-0"
+      >
+        CTA Label Here <span><img class="ml-2 w-6 h-6" src="./src//assets/images/hero/btn-arrow-right.svg" alt=""></span>
+      </button>
+
+      <p class="mt-4 text-sm font-normal leading-[150%] text-dmt-gray1 text-center">Lorem ipsum dolor sit amet consectetur.</p>
+
+
+          
+
+        </form>
       </div>
 
-      <!-- Overlay -->
-
-    </section>
+    </div>
+  </div>
+</section>
     <!-- banner end -->
   </section>
 
   <!-- <script type="module" src="/src/main.js"></script> -->
+
+
+
+
+
+<!-- <div class="gradient-border">
+  <div class="gradient-content">
+    Your Content Here
+  </div>
+</div> -->
+
+
+
+
+
+  <div class="w-full bg-gray-100 py-16 overflow-hidden slider">
+
+  <div class="max-w-6xl mx-auto overflow-hidden">
+
+    <div class="flex gap-6 slider-track">
+
+      <div class="card bg-[#e7dfd2]">1</div>
+      <div class="card bg-[#dce6e4]">2</div>
+      <div class="card bg-[#e4e8f1]">3</div>
+      <div class="card bg-[#f0e4d7]">4</div>
+      <div class="card bg-[#fce7f3]">5</div>
+      <div class="card bg-[#e0f2fe]">1</div>
+
+    </div>
+
+    <!-- Indicator -->
+    <div class="flex justify-center mt-8 gap-2 relative">
+      <div class="indicator-line"></div>
+      <div class="indicator-line"></div>
+      <div class="indicator-line"></div>
+      <div class="indicator-line"></div>
+      <div class="indicator-line"></div>
+
+      <div class="active-indicator" style="animation: indicatorMove 18s infinite"></div>
+    </div>
+
+  </div>
+
+</div>
 </body>
 
 </html>
+
+
+
+
+<!-- "absolute ml-2.5 my-2.5 w-5 h-5" -->
