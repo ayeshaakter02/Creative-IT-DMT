@@ -1,102 +1,175 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- google fonts -->
-    <link href="/src/style.css" rel="stylesheet" />
-    <title>dmt</title>
-  </head>
 
-  <body>
-    <section id="hero">
-      <nav class="container">
-        <div class="flex justify-between items-center py-4 px-4 sm:px-0">
-          <!-- Logo -->
-          <div class="w-28 sm:w-36 lg:w-44">
-            <img
-              src="./src/assets/images/logo.png"
-              alt="Logo"
-              class="w-full h-auto"
-            />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- google fonts -->
+  <link href="/src/style.css" rel="stylesheet" />
+  <title>dmt</title>
+</head>
 
-          <!-- Desktop Menu -->
-          <ul
-            class="hidden sm:flex gap-2.5 md:gap-6 lg:gap-10 text-sm lg:text-base font-semibold"
-          >
-            <li><a href="#">Title</a></li>
-            <li><a href="#">Title</a></li>
-            <li><a href="#">Title</a></li>
-            <li><a href="#">Title</a></li>
-            <li><a href="#">Title</a></li>
-          </ul>
-          <!-- Desktop Button -->
-          <button class="btn hidden sm:flex">
-            Get Enroll
-            <span class="ml-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M5 12h14" />
-                <path d="M15 8l4 4-4 4" />
-              </svg>
-            </span>
-          </button>
-
-          <button class="sm:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
-            </button>
+<body>
+  <section id="hero">
+    <!-- navbar start -->
+    <nav class="container">
+      <div class="flex justify-between items-center py-4 px-4 sm:px-0">
+        <!-- Logo -->
+        <div class="w-28 sm:w-36 lg:w-44">
+          <img src="./src/assets/images/logo.png" alt="Logo" class="w-full h-auto" />
         </div>
-        <!-- Mobile Menu -->
-          <div class="sm:hidden flex flex-col px-4">
-            <ul class="text-sm lg:text-base font-semibold">
-              <li class="my-1.5"><a href="#">Title</a></li>
-              <li class="my-1.5"><a href="#">Title</a></li>
-              <li class="my-1.5"><a href="#">Title</a></li>
-              <li class="my-1.5"><a href="#">Title</a></li>
-              <li class="my-1.5"><a href="#">Title</a></li>
-            </ul>
-            <!-- mobile Button -->
-            <button class="btn flex w-32.5">
-              Get Enroll
-              <span class="ml-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M5 12h14" />
-                  <path d="M15 8l4 4-4 4" />
-                </svg>
-              </span>
-            </button>
-          </div>
-      </nav>
-    </section>
 
-    <!-- <script type="module" src="/src/main.js"></script> -->
-  </body>
+        <!-- Desktop Menu -->
+        <ul class="hidden sm:flex gap-2.5 md:gap-6 lg:gap-10 text-sm lg:text-base font-semibold">
+          <li><a href="#">Title</a></li>
+          <li><a href="#">Title</a></li>
+          <li><a href="#">Title</a></li>
+          <li><a href="#">Title</a></li>
+          <li><a href="#">Title</a></li>
+        </ul>
+        <!-- Desktop Button -->
+        <button class="btn hidden sm:flex">
+          Get Enroll
+          <span class="ml-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="M15 8l4 4-4 4" />
+            </svg>
+          </span>
+        </button>
+
+        <button class="sm:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 6l16 0" />
+            <path d="M4 12l16 0" />
+            <path d="M4 18l16 0" />
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="sm:hidden flex flex-col px-4">
+        <ul class="text-sm lg:text-base font-semibold">
+          <li class="my-1.5"><a href="#">Title</a></li>
+          <li class="my-1.5"><a href="#">Title</a></li>
+          <li class="my-1.5"><a href="#">Title</a></li>
+          <li class="my-1.5"><a href="#">Title</a></li>
+          <li class="my-1.5"><a href="#">Title</a></li>
+        </ul>
+        <!-- mobile Button -->
+        <button class="btn flex w-32.5">
+          Get Enroll
+          <span class="ml-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="M15 8l4 4-4 4" />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- banner start -->
+    <section class="h-200.5 relative bg-cover bg-center no-repeat"
+      style="background-image: url('./src/assets/images/hero-bg.png'); ">
+      <div class="container flex items-center">
+        <div class="grid md:grid-cols-2 gap-[66px] items-center mt-20.5">
+
+          <!-- Left Content -->
+          <div class="text-black">
+            <div class="flex py-2 pl-3 bg-white">
+              <img class="w-5 h-5" src="./src/assets/images/fire.png" alt="">
+              <p class="inline-block bg-white/10 ml-3 py-2 rounded-full text-sm mb-4">
+                Some overline text will be here with excitement
+              </p>
+            </div>
+
+            <h1 class="w-152.75 mt-2 text-4xl md:text-7xl font-extrabold leading-[1.2]">
+              Title Will Be Here
+              <br>
+              <span class="text-dmt-blue1 mt-2">Digital Marketing</span>
+            </h1>
+ 
+            <div class="mt-5 flex gap-4">
+              <button class="banner-label text-dmt-green1 border-dmt-green1 bg-dmt-green2">
+                <p>CTA Label</p>
+                <img src="./src/assets/images/banner-heart-rate-monitor.svg" alt="">
+              </button>
+              <button class="banner-label text-dmt-yellow1 border-dmt-yellow1 bg-dmt-yellow2">
+                <p>CTA Label</p>
+                <img src="./src/assets/images/banner-users.svg" alt="">
+              </button>
+              <button class="banner-label text-dmt-brand2 border-dmt-brand2 bg-dmt-brand3">
+                <p>CTA Label</p>
+                <img src="./src/assets/images/banner-crown.svg" alt="">
+              </button>
+            </div>
+
+            <p class="mt-5 text-lg font-normal max-w-lg text-dmt-black2">
+              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. Felis posuere
+              maecenas interdum sit cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis. Diam diam tellus
+              ultricies. Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. Felis
+              posuere maecenas interdum sit cras.
+            </p>
+
+            <div class="flex gap-4 mt-6">
+              <button href="#" class="btn px-6 py-3 rounded-lg font-semibold transition">
+                CTA Label Here
+                </a>
+
+                <button href="#" class="btn  px-6 py-3 rounded-lg font-semibold transition">
+                  Download Curriculum
+                  </a>
+            </div>
+          </div>
+
+          <!-- Right Form -->
+          <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full mx-auto">
+            <h3 class="text-2xl font-bold text-center mb-2">
+              Book Your Seat Now
+            </h3>
+            <p class="text-gray-500 text-center mb-6">
+              Start building your professional career for free
+            </p>
+
+            <form class="space-y-4">
+              <input type="text" placeholder="Your Full Name"
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none">
+
+              <input type="email" placeholder="Email Address"
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none">
+
+              <input type="text" placeholder="Phone Number"
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none">
+
+              <button type="submit"
+                class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-semibold transition">
+                CTA Label Here →
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Overlay -->
+
+    </section>
+    <!-- banner end -->
+  </section>
+
+  <!-- <script type="module" src="/src/main.js"></script> -->
+</body>
+
 </html>

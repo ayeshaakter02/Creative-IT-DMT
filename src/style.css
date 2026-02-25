@@ -33,4 +33,7 @@
   .btn {
     @apply px-3 py-3 items-center md:text-base sm:px-4 sm:py-2.5 text-sm xl:text-lg bg-dmt-blue1 text-white font-medium leading-[1.2] rounded-[10px];
   }
+  .banner-label {
+    @apply py-2 px-3 flex gap-2 border rounded-[10px] text-sm font-normal leading-[1.2] items-center
+  }
 }
