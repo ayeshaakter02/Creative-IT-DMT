@@ -17,7 +17,86 @@
   </head>
 
   <body>
-    
-    <script type="module" src="/src/main.js"></script>
+    <section id="hero">
+      <nav class="container">
+        <div class="flex justify-between items-center py-4 px-4 sm:px-0">
+          <!-- Logo -->
+          <div class="w-28 sm:w-36 lg:w-44">
+            <img
+              src="./src/assets/images/logo.png"
+              alt="Logo"
+              class="w-full h-auto"
+            />
+          </div>
+
+          <!-- Desktop Menu -->
+          <ul
+            class="hidden sm:flex gap-2.5 md:gap-6 lg:gap-10 text-sm lg:text-base font-semibold"
+          >
+            <li><a href="#">Title</a></li>
+            <li><a href="#">Title</a></li>
+            <li><a href="#">Title</a></li>
+            <li><a href="#">Title</a></li>
+            <li><a href="#">Title</a></li>
+          </ul>
+          <!-- Desktop Button -->
+          <button class="btn hidden sm:flex">
+            Get Enroll
+            <span class="ml-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14" />
+                <path d="M15 8l4 4-4 4" />
+              </svg>
+            </span>
+          </button>
+
+          <button class="sm:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+          <div class="sm:hidden flex flex-col px-4">
+            <ul class="text-sm lg:text-base font-semibold">
+              <li class="my-1.5"><a href="#">Title</a></li>
+              <li class="my-1.5"><a href="#">Title</a></li>
+              <li class="my-1.5"><a href="#">Title</a></li>
+              <li class="my-1.5"><a href="#">Title</a></li>
+              <li class="my-1.5"><a href="#">Title</a></li>
+            </ul>
+            <!-- mobile Button -->
+            <button class="btn flex w-32.5">
+              Get Enroll
+              <span class="ml-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M15 8l4 4-4 4" />
+                </svg>
+              </span>
+            </button>
+          </div>
+      </nav>
+    </section>
+
+    <!-- <script type="module" src="/src/main.js"></script> -->
   </body>
 </html>
