@@ -32,7 +32,7 @@
 
 @layer components {
   .btn {
-    @apply py-3 sm:py-2.5 items-center md:text-base text-sm xl:text-lg bg-dmt-blue1 text-white font-medium leading-[120%] rounded-[10px];
+    @apply py-3 sm:py-2.5 items-center md:text-base text-sm xl:text-lg bg-dmt-blue1 text-white font-medium leading-[120%] rounded-[10px] cursor-pointer;
   }
   .banner-label {
     @apply flex items-center gap-2 px-3 py-2 text-sm font-normal border rounded-[10px] transition-all duration-200 leading-[120%];
