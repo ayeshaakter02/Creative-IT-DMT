@@ -349,7 +349,7 @@
         <!-- Video Start -->
 
         <div
-          class="max-w-8xl md:w-150 lg:w-180 xl:w-4xl mx-auto mb-10 aspect-video rounded-[20px] overflow-hidden hover:border-8 hover:border-dmt-green1 duration-400"
+          class="max-w-285 md:w-150 lg:w-180 xl:w-285 mx-auto mb-10 aspect-video rounded-[20px] overflow-hidden hover:border-8 hover:border-dmt-green1 duration-400"
         >
           <video
             class="w-full h-full object-cover"
@@ -372,7 +372,7 @@
 
         <!-- Video Footer Start -->
         <div
-          class="max-w-6xl md:w-150 lg:w-180 xl:w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-left px-5  sm:px-0"
+          class="max-w-285 md:w-150 lg:w-180 xl:w-285 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-left px-5  sm:px-0"
         >
           <article>
             <h3
@@ -426,31 +426,31 @@
     <!-- Section-3 End : Promotion Video/saima -->
 
     <!-- Our Students Shared their Stories (slider) Start/toba  -->
-    <section class="py-10">
-      <!-- Title part start  -->
-      <div class="container text-center">
-        <h3 class="font-extrabold text-[40px] md:text-[56px] text-dmt-black1">
-          Our Students <span class="text-dmt-blue1">Shared their Stories</span>
-        </h3>
-        <p
-          class="py-5 lg:w-202.25 mx-auto text-base leading-[150%] text-dmt-black2 mb-4"
-        >
-          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
-          at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed
-          nunc sodales arcu mi ut volutpat lobortis.
-        </p>
-      </div>
-      <!-- Title part end  -->
-      <!-- Slider part start  -->
-      <div class="indicator lg:animate-[indicatorMove_18s_infinite] lg:flex lg:justify-between items-center mt-4">
+    
+    <section class="py-10 overflow-hidden">
+  <!-- Title -->
+  <div class="container text-center">
+    <h3 class="font-extrabold text-[40px] md:text-[56px] text-dmt-black1">
+      Our Students <span class="text-dmt-blue1">Shared their Stories</span>
+    </h3>
+    <p class="py-5 lg:w-200 mx-auto text-base leading-[150%] text-dmt-black2 mb-4">
+      Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
+      at non suscipit.
+    </p>
+  </div>
+
+  <!-- Slider -->
+  <div class="slider-wrapper overflow-hidden mt-10">
+    <div class="lg:animate-[slide_10s_infinite] block lg:flex gap-6">
+
         <!-- Profile one start  -->
-        <div
-          class="card bg-dmt-yellow2 p-5 flex gap-x-4 rounded-[20px] border-dmt-gray3 border-[0.5px]"
+                <div
+          class="card bg-dmt-yellow2 p-5 flex gap-x-4 rounded-[20px] mt-5 border-dmt-gray3 border-[0.5px] left-[50%]"
         >
-          <div class="">
+          <div class="xl:w-68.5 xl:h-57">
             <img
               src="/src/assets/images/sliderImage/profileImgOne.png"
-              alt="profileImgOne.png"
+              alt="profileImgTwo.png"
             />
           </div>
           <div class="">
@@ -481,7 +481,7 @@
               </div>
               <!-- Icons end  -->
             </div>
-            <p class="md:w-85 text-sm text-dmt-black2 leading-[150%]">
+            <p class="md:w-85 text-sm text-dmt-black2 leading-[150%] pt-4">
               Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
               ultricies eget amet faucibus diam. Dictum pharetra nisi donec
               neque ut mauris nulla eros. Lorem ipsum dolor sit amet
@@ -494,11 +494,12 @@
           </div>
         </div>
         <!-- Profile one end  -->
+
         <!-- Profile two start  -->
         <div
           class="card bg-dmt-green2 p-5 flex gap-x-4 rounded-[20px] mt-5 border-dmt-gray3 border-[0.5px] left-[50%]"
         >
-          <div class="">
+          <div class="xl:w-68.5 xl:h-57">
             <img
               src="/src/assets/images/sliderImage/profileImgTwo.png"
               alt="profileImgTwo.png"
@@ -545,11 +546,12 @@
           </div>
         </div>
         <!-- Profile two end  -->
+
         <!-- Profile three start  -->
         <div
           class="card bg-dmt-blue2 p-5 flex gap-x-4 rounded-[20px] mt-5 border-dmt-gray3 border-[0.5px]"
         >
-          <div class="">
+          <div class="xl:w-68.5 xl:h-57">
             <img
               src="/src/assets/images/sliderImage/profileImgThree.png"
               alt="profileImgThree.png"
@@ -597,22 +599,18 @@
         </div>
         <!-- Profile three end  -->
 
-      </div>
-      <!-- Slider part end -->
-      <!-- Indicator -->
-      <div class="flex justify-center mt-8 gap-2 relative">
-        <div class="indicator-line"></div>
-        <div class="indicator-line"></div>
-        <div class="indicator-line"></div>
-        <div class="indicator-line"></div>
-        <div class="indicator-line"></div>
+    </div>
+  </div>
 
-        <div
-          class="active-indicator indicator lg:animate-[indicatorMove_18s_infinite]"
+  <!-- Indicator -->
+  <div class="relative flex justify-center mt-8 gap-2">
+    <div class="indicator-line"></div>
+    <div class="indicator-line"></div>
+    <div class="indicator-line"></div>
 
-        ></div>
-      </div>
-    </section>
+    <div class="active-indicator lg:animate-[indicatorMove_10s_infinite]"></div>
+  </div>
+</section>
     <!-- Our Students Shared their Stories (slider) End/toba  -->
     <!-- Ready to Start Your Career start/faysal -->
     <div class="py-35">
@@ -760,5 +758,3 @@
     <!-- Ready to Start Your Career end/faysal -->
   </body>
 </html>
-
-<!-- "absolute ml-2.5 my-2.5 w-5 h-5" -->
