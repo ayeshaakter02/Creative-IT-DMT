@@ -77,6 +77,26 @@
     /* margin-left: 300px; */
     animation: slide 18s infinite;
   }
+  /* ................................form part start................................ */
+  .form_Label {
+    @apply mb-2 block text-[12px] font-medium text-dmt-black1;
+  }
+  .form_Input_Div {
+    @apply border text-dmt-gray1 hover:border-dmt-blue1 rounded-[10px] transition-colors;
+  }
+  .form_Input {
+    @apply text-[12px] font-medium group-hover:text-dmt-blue1 w-full py-3 pr-3 pl-10;
+  }
+  .input_wrapper {
+    @apply relative w-full;
+  }
+  .input_icon {
+    @apply absolute left-3 top-1/2 -translate-y-1/2 w-4.5;
+  }
+  .icon_Right_Arrow {
+    @apply absolute right-31.25 top-[30%] -translate-y-1/2 w-6.25 cursor-pointer;
+  }
+  /* ................................form part end................................ */
 
 @keyframes slide {
 
