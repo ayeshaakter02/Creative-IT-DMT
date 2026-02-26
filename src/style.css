@@ -1,1 +1,114 @@
 @import "tailwindcss";
+
+@theme {
+  --default-font-family: "Inter", sans-serif;
+  --color-dmt-black1: #1e1e1f;
+  --color-dmt-black2: #38435c;
+  --color-dmt-brand1-lg1: #ff8079;
+  --color-dmt-brand1-lg2: #ff1e1e;
+  --color-dmt-brand2: #df3636;
+  --color-dmt-brand3: #ffe9e9;
+  --color-dmt-blue1: #4285fa;
+  --color-dmt-blue2: #f1f5ff;
+  --color-dmt-blue3: #f4f8fc;
+  --color-dmt-green1: #34a853;
+  --color-dmt-green2: #eff8f2;
+  --color-dmt-yellow1: #f88513;
+  --color-dmt-yellow2: #fdf5e6;
+  --color-dmt-gray1: #6f7b88;
+  --color-dmt-gray2: #a9b0b8;
+  --color-dmt-gray3: #e9f0f8;
+  --color-dmt-lin1: #f88513;
+  --color-dmt-lin2: #34a853;
+  --color-dmt-ratings-lg1: #ffa600;
+  --color-dmt-ratings-lg2: #ff6c10;
+}
+
+@layer base {
+  .container {
+    @apply max-w-285! mx-auto;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply py-3 sm:py-2.5 items-center md:text-base text-sm xl:text-lg bg-dmt-blue1 text-white font-medium leading-[120%] rounded-[10px];
+  }
+  .banner-label {
+    @apply flex items-center gap-2 px-3 py-2 text-sm font-normal border rounded-[10px] transition-all duration-200 leading-[120%];
+  }
+
+  .form-label {
+    @apply block text-xs font-medium text-dmt-black1 mb-2;
+  }
+
+  .form-input {
+    @apply w-full rounded-lg border border-dmt-gray2
+  bg-dmt-blue3
+  focus:bg-white
+  focus:border-dmt-blue1
+  focus:outline-none
+  placeholder:text-dmt-gray1
+  focus:placeholder:text-dmt-blue1
+  text-xs
+  pl-9.5 py-2.75
+  transition-all duration-200;
+  }
+
+  .input-icon {
+    @apply absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5;
+  }
+
+  /* CARD STYLE */
+.card {
+  @apply w-full lg:w-[calc((100%-48px)/3)] shrink-0 p-6 rounded-2xl text-center md:text-start;
+}
+
+/* INDICATOR LINE */
+.indicator-line {
+  @apply w-10 h-1 bg-gray-300 rounded-full hidden lg:block;
+}
+
+/* ACTIVE INDICATOR */
+.active-indicator {
+  @apply absolute bottom-0 -ml-25 justify-center w-10 h-1 bg-blue-600 rounded-full hidden lg:flex;
+}
+
+/* ================= SLIDE KEYFRAME ================= */
+@keyframes slide {
+  0%, 30% {
+    transform: translateX(0);
+  }
+
+  35%, 65% {
+    transform: translateX(calc(-1 * (100% / 3 + 16px)));
+  }
+
+  70%, 95% {
+    transform: translateX(calc(-2 * (100% / 3 + 16px)));
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* ================= INDICATOR KEYFRAME ================= */
+@keyframes indicatorMove {
+  0%, 30% {
+    transform: translateX(0);
+  }
+
+  35%, 65% {
+    transform: translateX(48px);
+  }
+
+  70%, 95% {
+    transform: translateX(96px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+}
