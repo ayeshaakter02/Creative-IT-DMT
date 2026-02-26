@@ -1,5 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> – FAQ & Footer</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- ================= FAQ SECTION ================= -->
+<section class="py-20 bg-white relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4">
+
+    <!-- Heading -->
+    <div class="text-center mb-14">
+      <h2 class="text-4xl font-bold">
+        Frequently Asked <span class="text-blue-600">Questions</span>
+      </h2>
+      <p class="mt-4 max-w-2xl mx-auto text-gray-500">
+        Everything you need to know about our services and support.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-10 items-center">
+
+      <!-- Left Illustration -->
+      <div class="hidden lg:block">
+        <img src="images/faq-left.png" alt="FAQ illustration">
+      </div>
+
+      <!-- FAQ Accordion -->
+      <div class="lg:col-span-2 space-y-4">
+
+        <!-- Item -->
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span>What services does your company provide?</span>
+            <i class="fa-solid fa-minus"></i>
+          </button>
+          <div class="faq-content block">
+            <p>
+              We offer professional IT training, career guidance, and real-world
+              project-based learning to help students and professionals grow.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span>Do you offer online courses?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+
+        <!-- Item -->
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span>Are certificates provided after completion?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+
+        <!-- Item -->
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span>How can I contact support?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Right Illustration -->
+      <div class="hidden lg:block">
+        <img src="images/faq-right.png" alt="Support illustration">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER SECTION ================= -->
+    <footer class="footer-bg bg-[#0B2440] text-white pt-16 pb-10">
+  <div class="max-w-7xl mx-auto px-4">
+
+    <!-- Top Footer -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+
+      <!-- Logo -->
+      <div class="flex items-center gap-4">
+        <img src="images/logo.png" class="w-14" alt="Logo">
+        <div>
+          <h3 class="text-xl font-bold">Your Company</h3>
+          <p class="text-sm text-gray-300">Empowering Digital Careers</p>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="font-semibold mb-3">Contact Us</h4>
+        <p class="text-sm text-gray-300">
+          <i class="fa-solid fa-phone mr-2"></i> +880 17XX XXX XXX
+        </p>
+        <p class="text-sm text-gray-300">
+          <i class="fa-solid fa-envelope mr-2"></i> support@yourcompany.com
+        </p>
+      </div>
+
+      <!-- App -->
+      <div>
+        <h4 class="font-semibold mb-3">Download App</h4>
+        <div class="flex gap-3">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" class="h-10">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" class="h-10">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-600 my-10"></div>
+
+    <!-- Branches -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm text-gray-300">
+      <div>
+        <i class="fa-solid fa-location-dot text-blue-400"></i>
+        <p class="mt-2">Main Campus – Dhaka</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-location-dot text-blue-400"></i>
+        <p class="mt-2">Dhanmondi Branch</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-location-dot text-blue-400"></i>
+        <p class="mt-2">Chattogram Branch</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-location-dot text-blue-400"></i>
+        <p class="mt-2">International Office</p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+</body>
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
