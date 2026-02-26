@@ -34,3 +34,12 @@
     @apply px-3 py-3 text-base sm:px-4 sm:py-4 sm:text-lg bg-dmt-blue1 text-white font-medium leading-[1.2] rounded-[10px];
   }
 }
+
+/* Custom transition for the chevron */
+    details[open] .chevron {
+      transform: rotate(180deg);
+    }
+    /* Hide the default marker */
+    summary::-webkit-details-marker {
+      display: none;
+    }
