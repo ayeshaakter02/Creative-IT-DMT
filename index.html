@@ -17,10 +17,11 @@
 </head>
 
 <body>
-  <section id="hero">
+  <!-- hero part start/ayesha -->
+<section id="hero">
     <!-- navbar start -->
     <nav class="container">
-      <div class="flex justify-between items-center py-4 px-4 sm:px-0">
+      <div class="flex justify-between items-center py-4 px-4 lg:px-0">
         <!-- Logo -->
         <div class="w-28 sm:w-36 lg:w-44">
           <img src="./src/assets/images/hero/logo.png" alt="Logo" class="w-full h-auto" />
@@ -38,7 +39,7 @@
         <button class="btn px-3 sm:px-4 hidden sm:flex">
           Get Enroll
           <span class="ml-1">
-            <img src="./src/assets/images/hero/btn-arrow-right.svg" alt="" />
+            <img src="./src/assets/images/hero/btn-arrow-right.svg" alt="">
           </span>
         </button>
 
@@ -52,6 +53,7 @@
             <path d="M4 18l16 0" />
           </svg>
         </button>
+      </div>
       <!-- Mobile Menu -->
       <div class="sm:hidden flex flex-col px-4">
         <ul class="text-sm lg:text-base font-semibold">
@@ -65,142 +67,167 @@
         <button class="btn px-3 flex w-32.5">
           Get Enroll
           <span class="ml-1">
-            <img src="./src/assets/images/hero/btn-arrow-right.svg" alt="" />
+            <img src="./src/assets/images/hero/btn-arrow-right.svg" alt="">
           </span>
         </button>
       </div>
     </nav>
     <!-- navbar end -->
     <!-- banner start -->
-    <section class="relative bg-cover bg-center bg-no-repeat" style="
-          background-image: url(&quot;./src/assets/images/hero/hero-bg.png&quot;);
-        ">
-      <div class="container pt-12 pb-20.25">
-        <div class="lg:flex lg:gap-16.5 items-center">
-          <!-- LEFT CONTENT -->
-          <div class="text-center lg:text-left">
-            <!-- Overline -->
-            <div
-              class="inline-flex items-center gap-1 px-3 py-2 rounded-full bg-white shadow-[0_0_40px_rgba(176,200,232,0.4)]">
-              <img class="w-5 h-5" src="./src/assets/images/hero/fire.png" alt="" />
-              <p class="text-xs italic text-dmt-black2 leading-[150%]">
-                Some overline text will be here with excitement
-              </p>
-            </div>
+        <section id="banner"
+  class="relative bg-cover bg-center bg-no-repeat"
+  style="background-image: url('./src/assets/images/hero/hero-bg.png');"
+>
+  <div class="container px-4">
+    
+    <div class="grid lg:grid-cols-2 gap-16.5 items-center">
 
-            <!-- Heading -->
-            <h1 class="mt-2 text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-[120%] text-dmt-black1">
-              Title Will Be Here <br />
-              <span class="text-dmt-blue1 mt-2">Digital Marketing</span>
-            </h1>
+      <!-- LEFT CONTENT -->
+      <div class="max-w-153.25 mx-auto lg:mx-0 text-center lg:text-left">
 
-            <!-- Label Buttons -->
-            <div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-5">
-              <button class="banner-label text-dmt-green1 border-dmt-green1 bg-dmt-green2">
-                CTA Label
-                <img src="./src/assets/images/banner-heart-rate-monitor.svg" alt="" />
-              </button>
+        <!-- Overline -->
+        <div class="inline-flex items-center gap-1 px-3 py-2 rounded-full bg-white shadow-[0_0_40px_rgba(176,200,232,0.4)]">
+          <img class="w-5 h-5" src="./src/assets/images/hero/fire.png" alt="">
+          <p class="text-xs italic text-dmt-black2 leading-[150%]">
+            Some overline text will be here with excitement
+          </p>
+        </div>
 
-              <button class="banner-label text-dmt-yellow1 border-dmt-yellow1 bg-dmt-yellow2">
-                CTA Label
-                <img src="./src/assets/images/banner-users.svg" alt="" />
-              </button>
+        <!-- Heading -->
+        <h1 class="mt-2 text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-[120%] text-dmt-black1">
+          Title Will Be Here <br />
+          <span class="text-dmt-blue1 mt-2">Digital Marketing</span>
+        </h1>
 
-              <button class="banner-label text-dmt-brand2 border-dmt-brand2 bg-dmt-brand3">
-                CTA Label
-                <img src="./src/assets/images/hero/banner-crown.svg" alt="" />
-              </button>
-            </div>
+        <!-- Label Buttons -->
+        <div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-5">
+          <button class="banner-label text-dmt-green1 border-dmt-green1 bg-dmt-green2">
+            CTA Label
+            <img src="./src/assets/images/banner-heart-rate-monitor.svg" alt="">
+          </button>
 
-            <!-- Description -->
-            <p class="max-w-xl mt-5 text-dmt-black2 mx-auto lg:mx-0 text-lg font-normal leading-[150%]">
-              Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt
-              eu est at non suscipit. Felis posuere maecenas interdum sit
-              cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis.
-              Diam diam tellus ultricies. Lorem ipsum dolor sit amet
-              consectetur. Orci est elit tincidunt eu est at non suscipit.
-              Felis posuere maecenas interdum sit cras.
-            </p>
+          <button class="banner-label text-dmt-yellow1 border-dmt-yellow1 bg-dmt-yellow2">
+            CTA Label
+            <img src="./src/assets/images/banner-users.svg" alt="">
+          </button>
 
-            <!-- CTA Buttons -->
-            <div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-6">
-              <button class="btn flex px-6 py-3 rounded-lg font-semibold transition">
-                CTA Label Here
-                <img class="w-5 h-5 ml-2" src="./src/assets/images/hero/banner-crown2.svg" alt="" />
-              </button>
+          <button class="banner-label text-dmt-brand2 border-dmt-brand2 bg-dmt-brand3">
+            CTA Label
+            <img src="./src/assets/images/hero/banner-crown.svg" alt="">
+          </button>
+        </div>
 
-              <button class="btn flex px-6 py-3 rounded-lg font-semibold transition">
-                Download Curriculum
-                <img class="w-5 h-5 ml-2" src="./src/assets/images/hero/banner-arrow-down.svg" alt="" />
-              </button>
-            </div>
-          </div>
+        <!-- Description -->
+        <p class="mt-5 text-dmt-black2 max-w-xl mx-auto lg:mx-0 text-lg font-normal">
+          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. Felis posuere
+              maecenas interdum sit cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis. Diam diam tellus
+              ultricies. Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. Felis
+              posuere maecenas interdum sit cras.
+        </p>
 
-          <!-- RIGHT FORM -->
-          <div class="justify-center flex">
-            <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 animate-slide mt-5 sm:mt-0">
-              <h3 class="text-[28px] font-semibold text-center text-dmt-black1 leading-[150%]">
-                Book Your Seat Now
-              </h3>
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-6">
+          <button class="btn flex px-6 py-3 rounded-lg font-semibold transition">
+            CTA Label Here
+            <img class="w-5 h-5 ml-2" src="./src/assets/images/hero/banner-crown2.svg" alt="">
+          </button>
 
-              <p class="text-center text-dmt-black2 mt-1 mb-8 font-normal leading-[150%]">
-                Start building your professional career for free
-              </p>
-              <form class="space-y-5">
-                <!-- Full Name -->
-                <div>
-                  <label class="form-label">Your Full Name</label>
-                  <div class="relative">
-                    <img class="input-icon" src="./src/assets/images/hero/banner-input-user.svg" alt="" />
-                    <input type="text" placeholder="Enter Here" class="form-input" />
-                  </div>
-                </div>
+          <button class="btn flex px-6 py-3 rounded-lg font-semibold transition">
+            Download Curriculum
+            <img class="w-5 h-5 ml-2" src="./src/assets/images/hero/banner-arrow-down.svg" alt="">
+          </button>
+        </div>
 
-                <!-- Email -->
-                <div>
-                  <label class="form-label">Email Address</label>
-                  <div class="relative">
-                    <img class="input-icon" src="./src/assets/images/hero/input-mail.svg" alt="" />
-                    <input type="email" placeholder="Enter Here" class="form-input" />
-                  </div>
-                </div>
+      </div>
 
-                <!-- Phone -->
-                <div>
-                  <label class="form-label">Phone Number</label>
-                  <div class="relative">
-                    <img class="input-icon" src="./src/assets/images/hero/input-phone-call.svg" alt="" />
-                    <input type="tel" placeholder="Enter Here" class="form-input" />
-                  </div>
-                </div>
+      <!-- RIGHT FORM -->
+<div class="justify-center flex mt-5 sm:mt-0">
 
-                <!-- Career Goals -->
-                <div>
-                  <label class="form-label">Career Goals</label>
-                  <div class="relative">
-                    <img class="input-icon" src="./src/assets/images/hero/input-award.svg" alt="" />
-                    <input type="text" placeholder="Enter Here" class="form-input" />
-                  </div>
-                </div>
+  <div
+    class="form-animation before:bg-[conic-gradient(from_45deg,#F88513,white,#34A853,white,#F88513)]"
+  >
 
-                <!-- Submit -->
-                <button type="submit"
-                  class="btn flex justify-center sm:w-60 xl:w-103.25 mt-6 mb-4 py-4.25 px-5 sm:px-0">
-                  CTA Label Here
-                  <span><img class="ml-2 w-6 h-6" src="./src//assets/images/hero/btn-arrow-right.svg" alt="" /></span>
-                </button>
+    <!-- Inner Card -->
+    <div class="relative z-10 bg-white rounded-2xl shadow-2xl p-6 sm:p-8">
 
-                <p class="mt-4 text-sm font-normal leading-[150%] text-dmt-gray1 text-center">
-                  Lorem ipsum dolor sit amet consectetur.
+      <h3 class="text-[28px] font-semibold text-center text-dmt-black1 leading-[150%]">
+        Book Your Seat Now
+      </h3>
+
+      <p class="text-center text-dmt-black2 mt-1 mb-8 font-normal leading-[150%]">
+        Start building your professional career for free
+      </p>
+
+      <form class="space-y-5">
+
+        <!-- Full Name -->
+        <div>
+          <label class="form-label">Your Full Name</label>
+          <div class="relative">
+            <img class="input-icon" src="./src/assets/images/hero/banner-input-user.svg" alt="" />
+            <input type="text" placeholder="Enter Here" class="form-input" />
           </div>
         </div>
-      </div>
-    </section>
+
+        <!-- Email -->
+        <div>
+          <label class="form-label">Email Address</label>
+          <div class="relative">
+            <img class="input-icon" src="./src/assets/images/hero/input-mail.svg" alt="" />
+            <input type="email" placeholder="Enter Here" class="form-input" />
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div>
+          <label class="form-label">Phone Number</label>
+          <div class="relative">
+            <img class="input-icon" src="./src/assets/images/hero/input-phone-call.svg" alt="" />
+            <input type="tel" placeholder="Enter Here" class="form-input" />
+          </div>
+        </div>
+
+        <!-- Career Goals -->
+        <div>
+          <label class="form-label">Career Goals</label>
+          <div class="relative">
+            <img class="input-icon" src="./src/assets/images/hero/input-award.svg" alt="" />
+            <input type="text" placeholder="Enter Here" class="form-input" />
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <button
+          type="submit"
+          class="btn flex justify-center sm:w-60 xl:w-103.25 mt-6 mb-4 py-4.25 px-5 sm:px-0"
+        >
+          CTA Label Here
+          <span>
+            <img class="ml-2 w-6 h-6" src="./src/assets/images/hero/btn-arrow-right.svg" alt="" />
+          </span>
+        </button>
+
+        <p class="mt-4 text-sm font-normal leading-[150%] text-dmt-gray1 text-center">
+          Lorem ipsum dolor sit amet consectetur.
+        </p>
+
+      </form>
+
+    </div>
+  </div>
+
+</div>
+
+    </div>
+  </div>
+</section>
     <!-- banner end -->
   </section>
 
+  <!-- hero part end/ayesha -->
+
   <!-- Section-3 Start : Promotion Video/saima -->
-  <section class="relative flex flex-col items-center justify-center pt-15 pb-35">
+  <section id="promotion-video" class="relative flex flex-col items-center justify-center pt-15 pb-35">
     <!-- Background Start -->
 
     <div class="hidden absolute inset-0 z-0 sm:flex items-center justify-center pointer-events-none -mt-30">
@@ -279,9 +306,9 @@
   </section>
   <!-- Section-3 End : Promotion Video/saima -->
 
-  <!-- Section-4 Start : Course Module -->
+  <!-- Section-4 Start : Course Module/saima -->
 
-  <section class="min-h-screen flex flex-col items-center justify-center py-20 px-6 bg-cover bg-center bg-no-repeat" style="background-image: url('src/assets/images/course-module/module-bg.png');">
+  <section id="course-module" class="min-h-screen flex flex-col items-center justify-center py-20 px-6 bg-cover bg-center bg-no-repeat" style="background-image: url('src/assets/images/course-module/module-bg.png');">
 
     <!-- Background Start -->
 
@@ -490,12 +517,13 @@
     
   </section>
 
-  <!-- Section-4 End : Course Module -->
+  <!-- Section-4 End : Course Module/saima -->
 
-  <!-- Eye Catchy Digital Marketing Banner  Start -->
-  <section class="relative py-[167px] w-full flex items-center justify-center overflow-hidden font-[Inter]">
+  <!-- Eye Catchy Digital Marketing Banner  Start/habibur -->
+  <section id="eye-catchy" class="relative py-41.75 w-full flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0">
       <img src="./src/assets/images/eye/docImage.jpg" alt="Marketing Banner" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-[#1F2024]/70"></div>
 
     </div>
 
@@ -507,115 +535,157 @@
       </div>
     </div>
   </section>
-  <!-- Eye Catchy Digital Marketing Banner  End -->
+  <!-- Eye Catchy Digital Marketing Banner  End/habibur -->
 
-  <!-- Journey Roadmap Section Start-->
-  <section class="py-35 bg-white font-[Inter] ">
-    <div class="container">
-      <div class="text-center mb-12">
-        <h2 class="text-4xl md:text-5xl font-bold text-dmt-black1 mb-4 leading-tight">
-          An Exciting
-          <span class="text-dmt-blue1 italic">Journey Roadmap</span>
-        </h2>
-        <p class="text-dmt-gray1 max-w-2xl mx-auto leading-relaxed">
-          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
-          est at non suscipit. Felis posuere maecenas interdum sit cras.
-          Egestas sed nunc sodales arcu mi ut volutpat lobortis.
-        </p>
-      </div>
+  <!-- Journey Roadmap Section Start/habibur-->
+<section id="journey"
+  class="py-16 md:py-35 bg-white bg-cover bg-no-repeat bg-position-[center_50px]"
+  style="background-image: url('./src/assets/images/journey/Journey-bg.png');"
+>
+  <div class="container px-4">
+
+    <!-- Heading -->
+    <div class="text-center mb-12 md:mb-16">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-dmt-black1 mb-4 leading-tight">
+        An Exciting
+        <span class="text-dmt-blue1 italic">Journey Roadmap</span>
+      </h2>
+
+      <p class="text-dmt-gray1 max-w-2xl mx-auto leading-relaxed text-sm md:text-base">
+        Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
+        est at non suscipit. Felis posuere maecenas interdum sit cras.
+        Egestas sed nunc sodales arcu mi ut volutpat lobortis.
+      </p>
     </div>
-    <div class="bg-cover bg-center bg-no-repeat" style="
-            background-image: url('./src/assets/images/journey/Journey-bg.png');">
-      <div class="relative overflow-hidden">
-        <div class="flex flex-wrap justify-center gap-6 mb-6">
-          <div class="lg:w-91 w-full p-8 rounded-[30px] border-2 border-dmt-blue2 bg-white shadow-sm">
-            <div class="flex items-center gap-4 mb-4">
-              <span class="text-3xl font-bold text-dmt-blue1">1</span>
-              <div class="h-0.5 flex-1 bg-gradient-to-r from-dmt-blue1 to-transparent opacity-40"></div>
-            </div>
-            <h3 class="text-xl font-bold text-dmt-black1 mb-3">
-              Journey Title Will Be Here
-            </h3>
-            <p class="text-dmt-gray1 text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-              ultricies eget amet faucibus diam. Dictum pharetra nisi donec
-              neque ut mauris nulla eros.
-            </p>
-          </div>
 
-          <div class="lg:w-[364px] w-full p-8 rounded-[30px] border-2 border-dmt-green2 bg-white shadow-sm">
-            <div class="flex items-center gap-4 mb-4">
-              <span class="text-3xl font-bold text-dmt-green1">2</span>
-              <div class="h-[2px] flex-1 bg-gradient-to-r from-dmt-green1 to-transparent opacity-40"></div>
-            </div>
-            <h3 class="text-xl font-bold text-dmt-black1 mb-3">
-              Journey Title Will Be Here
-            </h3>
-            <p class="text-dmt-gray1 text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-              ultricies eget amet faucibus diam. Dictum pharetra nisi donec
-              neque ut mauris nulla eros.
-            </p>
-          </div>
+    <!-- Grid Wrapper -->
+      <!-- Top 3 Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
 
-          <div class="lg:w-[364px] w-full p-8 rounded-[30px] border-2 border-dmt-yellow2 bg-white shadow-sm">
-            <div class="flex items-center gap-4 mb-4">
-              <span class="text-3xl font-bold text-dmt-yellow1">3</span>
-              <div class="h-[2px] flex-1 bg-gradient-to-r from-dmt-yellow1 to-transparent opacity-40"></div>
-            </div>
-            <h3 class="text-xl font-bold text-dmt-black1 mb-3">
-              Journey Title Will Be Here
-            </h3>
-            <p class="text-dmt-gray1 text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-              ultricies eget amet faucibus diam. Dictum pharetra nisi donec
-              neque ut mauris nulla eros.
-            </p>
+        <!-- Card 1 -->
+        <div class="relative rounded-3xl p-[2px] overflow-hidden">
+
+  <!-- Animated Border -->
+  <div
+    class="absolute inset-0 overflow-hidden rounded-3xl
+
+before:content-['']
+before:absolute
+before:top-[-150%]
+before:left-1/2
+before:w-[00px]
+before:h-[300%]
+before:-translate-x-1/2
+before:bg-[conic-gradient(from_45deg,#34A853,white,#34A853)]
+before:animate-[spin_10s_linear_infinite]"
+  ></div>
+
+  <!-- Card -->
+  <div class="relative z-10 p-6 md:p-8 rounded-3xl bg-white shadow-sm">
+
+    <div class="flex items-center gap-4 mb-4">
+      <span class="text-2xl md:text-3xl font-bold text-dmt-blue1 bg-dmt-blue2 rounded-[10px] py-1 px-5">
+        1
+      </span>
+      <div class="h-0.5 flex-1 bg-linear-to-r from-dmt-blue1 to-transparent opacity-40"></div>
+    </div>
+
+    <h3 class="text-lg md:text-xl font-bold text-dmt-black1 mb-3">
+      Journey Title Will Be Here
+    </h3>
+
+    <p class="text-dmt-gray1 text-sm leading-relaxed">
+      Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies
+      eget amet faucibus diam.
+    </p>
+
+  </div>
+</div>
+
+        <!-- Card 2 -->
+        <div class="before:bg-[conic-gradient(from_45deg,#34A853,white,#34A853)] p-6 md:p-8 rounded-3xl bg-white shadow-sm">
+          <div class="flex items-center gap-4 mb-4">
+            <span class="text-2xl md:text-3xl font-bold text-dmt-green1 bg-dmt-green2 rounded-[10px] py-1 px-4.5">2</span>
+            <div class="h-0.5 flex-1 bg-linear-to-r from-dmt-green1 to-transparent opacity-40"></div>
           </div>
+          <h3 class="text-lg md:text-xl font-bold text-dmt-black1 mb-3">
+            Journey Title Will Be Here
+          </h3>
+          <p class="text-dmt-gray1 text-sm leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies
+            eget amet faucibus diam.
+          </p>
         </div>
 
-        <div class="flex flex-wrap justify-center gap-6">
-          <div class="lg:w-[558px] w-full p-8 rounded-[30px] border-2 border-dmt-brand3 bg-white shadow-sm">
-            <div class="flex items-center gap-4 mb-4">
-              <span class="text-3xl font-bold text-dmt-brand2">4</span>
-              <div class="h-[2px] flex-1 bg-gradient-to-r from-dmt-brand2 to-transparent opacity-40"></div>
-            </div>
-            <h3 class="text-xl font-bold text-dmt-black1 mb-3">
-              Journey Title Will Be Here
-            </h3>
-            <p class="text-dmt-gray1 text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-              ultricies eget amet faucibus diam. Dictum pharetra nisi donec
-              neque ut mauris nulla eros.
-            </p>
-          </div>
+        <!-- Card 3 -->
+<div class="form-animatin before:bg-[conic-gradient(from_45deg,#F88513,white,#F88513)] p-6 md:p-8 rounded-3xl  bg-white shadow-sm
+            sm:col-span-2 md:col-span-2 lg:col-span-1
+            sm:max-w-md md:max-w-md lg:max-w-full
+            mx-auto lg:mx-0">
 
-          <div class="lg:w-[558px] w-full p-8 rounded-[30px] border-2 border-dmt-blue2 bg-white shadow-sm">
-            <div class="flex items-center gap-4 mb-4">
-              <span class="text-3xl font-bold text-dmt-blue1">5</span>
-              <div class="h-[2px] flex-1 bg-gradient-to-r from-dmt-blue1 to-transparent opacity-40"></div>
-            </div>
-            <h3 class="text-xl font-bold text-dmt-black1 mb-3">
-              Journey Title Will Be Here
-            </h3>
-            <p class="text-dmt-gray1 text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur. Lectus et lobortis
-              ultricies eget amet faucibus diam. Dictum pharetra nisi donec
-              neque ut mauris nulla eros.
-            </p>
-          </div>
-        </div>
+  <div class="flex items-center gap-4 mb-4">
+    <span class="text-2xl md:text-3xl font-bold text-dmt-yellow1 bg-dmt-yellow2 rounded-[10px] py-1 px-4.5">3</span>
+    <div class="h-0.5 flex-1 bg-linear-to-r from-dmt-yellow1 to-transparent opacity-40"></div>
+  </div>
+
+  <h3 class="text-lg md:text-xl font-bold text-dmt-black1 mb-3">
+    Journey Title Will Be Here
+  </h3>
+
+  <p class="text-dmt-gray1 text-sm leading-relaxed">
+    Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies
+    eget amet faucibus diam.
+  </p>
+</div>
+        
+
       </div>
-    </div>
-  </section>
-  <!-- Journey Roadmap Section End-->
+
+      <!-- Bottom 2 Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+        <!-- Card 4 -->
+        <div class="p-6 md:p-8 rounded-3xl border-2 border-dmt-brand3 bg-white shadow-sm">
+          <div class="flex items-center gap-4 mb-4">
+            <span class="text-2xl md:text-3xl font-bold text-dmt-brand2 bg-dmt-brand3 rounded-[10px] py-1 px-4.25">4</span>
+            <div class="h-0.5 flex-1 bg-linear-to-r from-dmt-brand2 to-transparent opacity-40"></div>
+          </div>
+          <h3 class="text-lg md:text-xl font-bold text-dmt-black1 mb-3">
+            Journey Title Will Be Here
+          </h3>
+          <p class="text-dmt-gray1 text-sm leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies
+            eget amet faucibus diam.
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="p-6 md:p-8 rounded-3xl border-2 border-dmt-blue2 bg-white shadow-sm">
+          <div class="flex items-center gap-4 mb-4">
+            <span class="text-2xl md:text-3xl font-bold text-dmt-blue1 bg-dmt-blue2 rounded-[10px] py-1 px-4.5">5</span>
+            <div class="h-0.5 flex-1 bg-linear-to-r from-dmt-blue1 to-transparent opacity-40"></div>
+          </div>
+          <h3 class="text-lg md:text-xl font-bold text-dmt-black1 mb-3">
+            Journey Title Will Be Here
+          </h3>
+          <p class="text-dmt-gray1 text-sm leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur. Lectus et lobortis ultricies
+            eget amet faucibus diam.
+          </p>
+        </div>
+
+      </div>
+
+  </div>
+</section>
+  <!-- Journey Roadmap Section End/habibur-->
 
   <!-- Our Students Shared their Stories (slider) Start/toba  -->
-      <section class="py-10 overflow-hidden">
+      <section id="students-stories" class="py-10 overflow-hidden">
         <!-- Title -->
         <div class="container text-center">
           <h3 class="font-extrabold text-[40px] md:text-[56px] text-dmt-black1">
-            Our Students <span class="text-dmt-blue1">Shared their Stories</span>
+            Our Students <span class="text-dmt-blue1 italic">Shared their Stories</span>
           </h3>
           <p class="py-5 lg:w-200 mx-auto text-base leading-[150%] text-dmt-black2 mb-4">
             Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
@@ -630,12 +700,12 @@
 
             <!-- Profile one start  -->
             <div
-              class="card bg-dmt-yellow2 p-5 flex gap-x-4 rounded-[20px] mt-5 border-dmt-gray3 border-[0.5px] left-[50%]">
+              class="card  w-2xl bg-dmt-yellow2">
               <div class="xl:w-68.5 xl:h-57">
                 <img src="/src/assets/images/sliderImage/profileImgOne.png" alt="profileImgTwo.png" />
               </div>
-              <div class="">
-                <div class="flex items-center gap-2">
+              <div class="-ml-5">
+                <div class="flex justify-start xl:justify-start lg:justify-center gap-2">
                   <p class="text-xl font-semibold text-dmt-black1">5.0</p>
                   <!-- Icons start  -->
                   <div class="flex items-center gap-x-1.5">
@@ -663,12 +733,12 @@
 
             <!-- Profile two start  -->
             <div
-              class="card bg-dmt-green2 p-5 flex gap-x-4 rounded-[20px] mt-5 border-dmt-gray3 border-[0.5px] left-[50%]">
+              class="card  w-2xl bg-dmt-green2">
               <div class="xl:w-68.5 xl:h-57">
                 <img src="/src/assets/images/sliderImage/profileImgTwo.png" alt="profileImgTwo.png" />
               </div>
-              <div class="">
-                <div class="flex items-center gap-2">
+              <div class="-ml-5">
+                <div class="flex justify-start xl:justify-start lg:justify-center gap-2">
                   <p class="text-xl font-semibold text-dmt-black1">5.0</p>
                   <!-- Icons start  -->
                   <div class="flex items-center gap-x-1.5">
@@ -695,12 +765,12 @@
             <!-- Profile two end  -->
 
             <!-- Profile three start  -->
-            <div class="card bg-dmt-blue2 p-5 flex gap-x-4 rounded-[20px] mt-5 border-dmt-gray3 border-[0.5px]">
+            <div class="card  w-2xl bg-dmt-blue2">
               <div class="xl:w-68.5 xl:h-57">
                 <img src="/src/assets/images/sliderImage/profileImgThree.png" alt="profileImgThree.png" />
               </div>
-              <div class="">
-                <div class="flex items-center gap-2">
+              <div class="-ml-5">
+                <div class="flex justify-start xl:justify-start lg:justify-center gap-2">
                   <p class="text-xl font-semibold text-dmt-black1">5.0</p>
                   <!-- Icons start  -->
                   <div class="flex items-center gap-x-1.5">
@@ -743,133 +813,164 @@
   <!-- Our Students Shared their Stories (slider) End/toba  -->
 
   <!-- Ready to Start Your Career start/faysal -->
-  <div class="py-35">
-    <div class="w-330 mx-auto flex gap-x-12.5 py-17.5 justify-center">
-      <!-- ================ Form Left Part Start ================ -->
-      <div class="">
-        <h2 class="text-dmt-black1 text-[56px] font-extrabold">Ready to</h2>
-        <h2 class="text-dmt-blue1 text-[56px] font-extrabold italic">
+  <section id="Carrer" class="container">
+    <div class="rounded-[14px] border border-blue-400 p-10 bg-center bg-cover bg-no-repeat" style="background-image: url('./src/assets/images/career/bg-DarkGradient.png');">
+
+    <div class="lg:flex lg:gap-16.5 items-center justify-between lg:py-17.5">
+
+      <!-- ============ Left Part ============ -->
+      <div class="lg:max-w-125.75 mx-auto text-center lg:text-start">
+
+        <h2 class="text-3xl sm:text-[56px] font-extrabold text-gray-800 leading-[120%]">
+          Ready To <br>
+          <span class="italic text-blue-500">
           Start Your Career
+        </span>
         </h2>
-        <p class="py-4 text-dmt-black2 w-125.75 font-normal text-[18px]">
-          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
-          est at non suscipit. Felis posuere maecenas interdum sit cras.
-          Egestas sed nunc sodales arcu mi ut volutpat lobortis.
+
+        
+
+        <p class="py-4 text-gray-600 text-sm sm:text-lg font-normal leading-[150%]">
+          Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis.
         </p>
-        <div class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full shadow-sm">
-          <img src="src/assets/images/siren2.png" alt="siren" class="w-5 h-5" />
-          <span class="font-medium text-dmt-black2 text-base leading-[120%]">
+
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-[12.5px] bg-white/70 rounded-full shadow">
+          <img src="src/assets/images/career/siren2.png" class="w-5 h-5" />
+          <span class="text-gray-700 font-medium text-base leading-[120%]">
             Limited Seats Available
           </span>
         </div>
-        <img src="src/assets/images/siren1.png" alt="siren1" class="pt-4 rounded-[10px]" />
+
+        <!-- Image Card -->
+        <div class="my-2.5 lg:mt-6
+                    rounded-[20px] flex justify-center">
+          <img src="src/assets/images/career/siren1.png" class="rounded-lg">
+        </div>
+
       </div>
-      <!-- ================ Form Left Part End ================ -->
-
-      <!-- ================ Form Right Part Start ================ -->
-      <div class="justify-center flex">
-        <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8  animate-slide mt-5  sm:mt-0">
-          <h3 class="text-[28px] font-semibold text-center text-dmt-black1 leading-[150%]">
-            Book Your Seat Now
-          </h3>
-
-          <p class="text-center text-dmt-black2 mt-1 mb-8 font-normal leading-[150%]">
-            Start building your professional career for free
-          </p>
-          <form class="space-y-5">
-            <!-- Full Name -->
-            <div>
-              <label class="form-label">Your Full Name</label>
-              <div class="relative">
-                <img class="input-icon" src="./src/assets/images/hero/banner-input-user.svg" alt="" />
-                <input type="text" placeholder="Enter Here" class="form-input" />
-              </div>
-            </div>
-                <!-- Email -->
-                <div>
-                  <label class="form-label">Email Address</label>
-                  <div class="relative">
-                    <img
-                      class="input-icon"
-                      src="./src/assets/images/hero/input-mail.svg"
-                      alt=""
-                    />
-                    <input
-                      type="email"
-                      placeholder="Enter Here"
-                      class="form-input"
-                    />
-                  </div>
-                </div>
-
-                <!-- Phone -->
-                <div>
-                  <label class="form-label">Phone Number</label>
-                  <div class="relative">
-                    <img
-                      class="input-icon"
-                      src="./src/assets/images/hero/input-phone-call.svg"
-                      alt=""
-                    />
-                    <input
-                      type="tel"
-                      placeholder="Enter Here"
-                      class="form-input"
-                    />
-                  </div>
-                </div>
-
-                <!-- Career Goals -->
-                <div>
-                  <label class="form-label">Career Goals</label>
-                  <div class="relative">
-                    <img
-                      class="input-icon"
-                      src="./src/assets/images/hero/input-award.svg"
-                      alt=""
-                    />
-                    <input
-                      type="text"
-                      placeholder="Enter Here"
-                      class="form-input"
-                    />
-                  </div>
-                </div>
-
-    <!-- Section-3 End : Promotion Video -->
+      <!-- ============ Left End ============ -->
 
 
-    <!-- ================= FAQ SECTION ================= -->
-<section class="py-20 bg-white relative overflow-hidden">
-  <div class="max-w-7xl mx-auto px-4">
+      <!-- ============ Right Form ============ -->
+<div class="justify-center flex mt-5 sm:mt-0">
 
-    <!-- Heading -->
-    <div class="text-center mb-14">
-      <h2 class="text-4xl font-bold">
-        Frequently Asked <span class="text-blue-600">Questions</span>
-      </h2>
-      <p class="mt-4 max-w-2xl mx-auto text-gray-500">
-        Everything you need to know about our services and support.
+  <div
+    class="form-animation before:bg-[conic-gradient(from_45deg,#F88513,white,#34A853,white,#F88513)] relative p-0.5 rounded-2xl overflow-hidden"
+  >
+
+    <!-- Inner Card -->
+    <div class="relative z-10 bg-white rounded-2xl shadow-2xl p-6 sm:p-8">
+
+      <h3 class="text-[28px] font-semibold text-center text-dmt-black1 leading-[150%]">
+        Book Your Seat Now
+      </h3>
+
+      <p class="text-center text-dmt-black2 mt-1 mb-8 font-normal leading-[150%]">
+        Start building your professional career for free
       </p>
+
+      <form class="space-y-5">
+
+        <!-- Full Name -->
+        <div>
+          <label class="form-label">Your Full Name</label>
+          <div class="relative">
+            <img class="input-icon" src="./src/assets/images/hero/banner-input-user.svg" alt="" />
+            <input type="text" placeholder="Enter Here" class="form-input" />
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label class="form-label">Email Address</label>
+          <div class="relative">
+            <img class="input-icon" src="./src/assets/images/hero/input-mail.svg" alt="" />
+            <input type="email" placeholder="Enter Here" class="form-input" />
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div>
+          <label class="form-label">Phone Number</label>
+          <div class="relative">
+            <img class="input-icon" src="./src/assets/images/hero/input-phone-call.svg" alt="" />
+            <input type="tel" placeholder="Enter Here" class="form-input" />
+          </div>
+        </div>
+
+        <!-- Career Goals -->
+        <div>
+          <label class="form-label">Career Goals</label>
+          <div class="relative">
+            <img class="input-icon" src="./src/assets/images/hero/input-award.svg" alt="" />
+            <input type="text" placeholder="Enter Here" class="form-input" />
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <button
+          type="submit"
+          class="btn flex justify-center sm:w-60 xl:w-103.25 mt-6 mb-4 py-4.25 px-5 sm:px-0"
+        >
+          CTA Label Here
+          <span>
+            <img class="ml-2 w-6 h-6" src="./src/assets/images/hero/btn-arrow-right.svg" alt="" />
+          </span>
+        </button>
+
+        <p class="mt-4 text-sm font-normal leading-[150%] text-dmt-gray1 text-center">
+          Lorem ipsum dolor sit amet consectetur.
+        </p>
+
+      </form>
+
+    </div>
+  </div>
+
+</div>
+      <!-- ============ Right End ============ -->
+
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-4 gap-10 items-center">
+  </div>
+</section>
 
-      <!-- Left Illustration -->
-      <div class="hidden lg:block">
-        <img src="images/faq-left.png" alt="FAQ illustration">
-      </div>
+<!-- faq section start/goni -->
+<section id="faq" class="py-20 bg-white relative overflow-hidden">
+  <div class="">
 
-      <!-- FAQ Accordion -->
-      <div class="lg:col-span-2 space-y-4">
+    <!-- Heading -->
+    <div class="container text-center mb-2.5 sm:mb-14">
+      <h2 class="text-3xl sm:text-4xl font-bold">
+        Frequently Asked <span class="text-dmt-blue1 italic">Questions</span>
+      </h2>
+      <p class="mt-4 text-sm sm:text-lg font-normal max-w-2xl mx-auto text-gray-500">
+        Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis.
+      </p>
+    </div>
+<div class="relative flex gap-20">
+
+  <!-- Left Illustration -->
+  <div class="hidden lg:block xl:ml-50 top-0">
+    <img src="./src/assets/images/faq/faq-left.png" alt="FAQ illustration" class="max-w-[250px] xl:max-w-[320px]">
+  </div>
+
+  <div class="container mx-auto">
+
+    <!-- FAQ Wrapper -->
+    <div class="max-w-3xl mx-auto">
+
+      <div class="space-y-4">
 
         <!-- Item -->
-        <div class="faq-item">
-          <button class="faq-btn">
+        <div class="bg-dmt-blue3 rounded-[14px] px-5 py-4 border border-[#e0eaff]">
+          <button class="w-full flex justify-between items-center font-semibold text-left">
             <span>What services does your company provide?</span>
-            <i class="fa-solid fa-minus"></i>
+            <img src="./src/assets/images/faq/faq-minus.svg" alt="">
           </button>
-          <div class="faq-content block">
+
+          <div class="mt-3 text-gray-600 leading-[1.7]">
             <p>
               We offer professional IT training, career guidance, and real-world
               project-based learning to help students and professionals grow.
@@ -878,100 +979,226 @@
         </div>
 
         <!-- Item -->
-        <div class="faq-item">
-          <button class="faq-btn">
+        <div class="bg-dmt-blue3 rounded-[14px] px-5 py-4 border border-[#e0eaff]">
+          <button class="w-full flex justify-between items-center font-semibold text-left">
             <span>Do you offer online courses?</span>
-            <i class="fa-solid fa-plus"></i>
+            <img src="./src/assets/images/faq/faq-plus.svg" alt="">
           </button>
         </div>
 
         <!-- Item -->
-        <div class="faq-item">
-          <button class="faq-btn">
+        <div class="bg-dmt-blue3 rounded-[14px] px-5 py-4 border border-[#e0eaff]">
+          <button class="w-full flex justify-between items-center font-semibold text-left">
             <span>Are certificates provided after completion?</span>
-            <i class="fa-solid fa-plus"></i>
+            <img src="./src/assets/images/faq/faq-plus.svg" alt="">
           </button>
         </div>
 
         <!-- Item -->
-        <div class="faq-item">
-          <button class="faq-btn">
+        <div class="bg-dmt-blue3 rounded-[14px] px-5 py-4 border border-[#e0eaff]">
+          <button class="w-full flex justify-between items-center font-semibold text-left">
             <span>How can I contact support?</span>
-            <i class="fa-solid fa-plus"></i>
+            <img src="./src/assets/images/faq/faq-plus.svg" alt="">
           </button>
         </div>
 
-      </div>
+        <!-- Item -->
+        <div class="bg-dmt-blue3 rounded-[14px] px-5 py-4 border border-[#e0eaff]">
+          <button class="w-full flex justify-between items-center font-semibold text-left">
+            <span>How can I join the seminar?</span>
+            <img src="./src/assets/images/faq/faq-plus.svg" alt="">
+          </button>
+        </div>
 
-      <!-- Right Illustration -->
-      <div class="hidden lg:block">
-        <img src="images/faq-right.png" alt="Support illustration">
       </div>
 
     </div>
   </div>
+
+  <!-- Right Illustration -->
+  <div class="hidden lg:block xl:mr-50 top-0">
+    <img src="./src/assets/images/faq/faq-right.png" alt="Support illustration" class="max-w-[250px] xl:max-w-[320px]">
+  </div>
+
+</div>
+      
+  </div>
 </section>
+<!-- faq section end/goni -->
 
 <!-- ================= FOOTER SECTION ================= -->
     <footer class="footer-bg bg-[#0B2440] text-white pt-16 pb-10">
-  <div class="max-w-7xl mx-auto px-4">
+  <div class="container px-4">
 
-    <!-- Top Footer -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+   <!-- Top Footer -->
+<div>
+  <div class="flex flex-col lg:flex-row lg:justify-between gap-10">
+    
+    <img src="./src/assets/images/footer/footer-logo.png" alt="" class="mx-auto lg:mx-0">
 
-      <!-- Logo -->
-      <div class="flex items-center gap-4">
-        <img src="images/logo.png" class="w-14" alt="Logo">
+    <div>
+      <h3 class="text-base leading-[150%] font-semibold text-center">
+        For any queries, feel free to contact us
+      </h3>
+
+      <div class="mt-4 flex flex-col flex-row gap-6 text-dmt-gray2 justify-center">
+        
         <div>
-          <h3 class="text-xl font-bold">Your Company</h3>
-          <p class="text-sm text-gray-300">Empowering Digital Careers</p>
+          <div class="flex gap-2">
+            <img src="./src/assets/images/footer/phone-call.svg" alt="">
+            <p class="text-base font-normal leading-[150%]">017XX XXX XXX</p>
+          </div>
+          <div class="flex gap-2">
+            <img src="./src/assets/images/footer/phone-call.svg" alt="">
+            <p class="text-base font-normal leading-[150%]">017XX XXX XXX</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Contact -->
-      <div>
-        <h4 class="font-semibold mb-3">Contact Us</h4>
-        <p class="text-sm text-gray-300">
-          <i class="fa-solid fa-phone mr-2"></i> +880 17XX XXX XXX
-        </p>
-        <p class="text-sm text-gray-300">
-          <i class="fa-solid fa-envelope mr-2"></i> support@yourcompany.com
-        </p>
-      </div>
-
-      <!-- App -->
-      <div>
-        <h4 class="font-semibold mb-3">Download App</h4>
-        <div class="flex gap-3">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" class="h-10">
-          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" class="h-10">
+        <div>
+          <div class="flex gap-2">
+            <img src="./src/assets/images/footer/mail.svg" alt="">
+            <p class="text-base font-normal leading-[120%]">supposemail.com</p>
+          </div>
+          <div class="flex gap-2">
+            <img src="./src/assets/images/footer/mail.svg" alt="">
+            <p class="text-base font-normal leading-[120%]">supposemail.com</p>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
 
-    <!-- Divider -->
-    <div class="border-t border-gray-600 my-10"></div>
+    <div class="text-center">
+      <p class="font-semibold text-base leading-[150%]">Download App</p>
 
-    <!-- Branches -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm text-gray-300">
-      <div>
-        <i class="fa-solid fa-location-dot text-blue-400"></i>
-        <p class="mt-2">Main Campus – Dhaka</p>
-      </div>
-      <div>
-        <i class="fa-solid fa-location-dot text-blue-400"></i>
-        <p class="mt-2">Dhanmondi Branch</p>
-      </div>
-      <div>
-        <i class="fa-solid fa-location-dot text-blue-400"></i>
-        <p class="mt-2">Chattogram Branch</p>
-      </div>
-      <div>
-        <i class="fa-solid fa-location-dot text-blue-400"></i>
-        <p class="mt-2">International Office</p>
+      <div class="flex gap-4 mt-4 justify-center">
+        <div class="flex gap-4 p-2.5 rounded-[10px] bg-white">
+          <img src="./src/assets/images/footer/qr-code.svg" alt="">
+          <img src="./src/assets/images/footer/playstore.svg" alt="">
+        </div>
+
+        <div class="flex gap-4 p-2.5 rounded-[10px] bg-white">
+          <img src="./src/assets/images/footer/qr-code.svg" alt="">
+          <img src="./src/assets/images/footer/app-store.svg" alt="">
+        </div>
       </div>
     </div>
+
+  </div>
+</div>
+
+<!-- Divider -->
+<div class="border-t border-gray-600 my-10"></div>
+
+
+<!-- Branches Row 1 -->
+<div class="mt-16 flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap gap-12 lg:gap-[144px] justify-center">
+
+  <!-- item -->
+  <div class="w-[284px] mx-auto">
+    <div class="flex items-center gap-2 px-[33.5px]">
+      <img src="./src/assets/images/footer/location.svg" alt="">
+      <h3 class="text-base font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
+        Head Office - Main Campus
+      </h3>
+    </div>
+
+    <p class="text-[12px] font-medium leading-[150%] text-center text-dmt-gray1 mt-2">
+      Momtaz Plaza, Dhanmondi, Dhaka <br>
+      +880 1777308777, +880 1624666000
+    </p>
+  </div>
+
+  <div class="w-[284px] mx-auto">
+    <div class="flex items-center gap-2 px-[43px]">
+      <img src="./src/assets/images/footer/location.svg" alt="">
+      <h3 class="text-base font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
+        Campus 02 - Dhanmondi
+      </h3>
+    </div>
+
+    <p class="text-[12px] font-medium leading-[150%] text-center text-dmt-gray1 mt-2">
+      Meher Plaza, Dhanmondi, Dhaka <br>
+      +880 1625555444, +880 1990779782
+    </p>
+  </div>
+
+  <div class="w-[284px] mx-auto">
+    <div class="flex items-center gap-2 px-[85px]">
+      <img src="./src/assets/images/footer/location.svg" alt="">
+      <h3 class="text-base font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
+        Mirpur Branch
+      </h3>
+    </div>
+
+    <p class="text-[12px] font-medium leading-[150%] text-center text-dmt-gray1 mt-2">
+      El Mercado, Dhaka 1216 <br>
+      +88013 100 100 27, +880 1924 222 999
+    </p>
+  </div>
+
+</div>
+
+
+<!-- Branches Row 2 -->
+<div class="flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap gap-12 mt-16 justify-between pb-10">
+
+  <div class="w-[238px] mx-auto">
+    <div class="flex items-center gap-2 px-[59.5px]">
+      <img src="./src/assets/images/footer/location.svg" alt="">
+      <h3 class="text-base font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
+        Uttara Branch
+      </h3>
+    </div>
+
+    <p class="text-[12px] font-medium leading-[150%] text-center text-dmt-gray1 mt-2">
+      RAJUK Razib Cosmo Shopping Complex <br>
+      Uttara, Dhaka-1230 +880 1990779827
+    </p>
+  </div>
+
+  <div class="w-[279px] mx-auto">
+    <div class="flex items-center gap-2 px-[59.5px]">
+      <img src="./src/assets/images/footer/location.svg" alt="">
+      <h3 class="text-base font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
+        Chattogram Branch
+      </h3>
+    </div>
+
+    <p class="text-[12px] font-medium leading-[150%] text-center text-dmt-gray1 mt-2">
+      9 No, Kapasgola Road Chawk Bazar, Chattogram
+      +880 1847422965, +880 1847422968
+    </p>
+  </div>
+
+  <div class="w-[194px] mx-auto">
+    <div class="flex items-center gap-2 px-[16.5px]">
+      <img src="./src/assets/images/footer/location.svg" alt="">
+      <h3 class="text-base font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
+        Panchagarh Branch
+      </h3>
+    </div>
+
+    <p class="text-[12px] font-medium leading-[150%] text-center text-dmt-gray1 mt-2">
+      Abdul Aziz Super Market, Panchagarh Bazar, 01704048383
+    </p>
+  </div>
+
+  <div class="w-[264px] mx-auto">
+    <div class="flex items-center gap-2 px-[67.5px]">
+      <img src="./src/assets/images/footer/location.svg" alt="">
+      <h3 class="text-base font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
+        Canada Branch
+      </h3>
+    </div>
+
+    <p class="text-[12px] font-medium leading-[150%] text-center text-dmt-gray1 mt-2">
+      61 Lakewood Ave, Saint John, New Brunswick
+      E2J 3N9, Canada +1 672-377-9977
+    </p>
+  </div>
+
+</div>
 
   </div>
 </footer>
