@@ -59,6 +59,15 @@
     @apply absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5;
   }
 
+  /* custom transition for  the chevron */
+  details[open] .chevron {
+    transform: rotate(180deg);
+  }
+  /* hide the default marker */
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
   /* CARD STYLE */
 .card {
   @apply w-full lg:w-[calc((100%-48px)/3)] shrink-0 p-6 rounded-2xl text-center md:text-start;
