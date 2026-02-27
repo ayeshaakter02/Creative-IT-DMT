@@ -12,6 +12,9 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet" />
   <!-- google fonts -->
+   <!-- Slick slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <!-- Slick slider -->
   <link href="/src/style.css" rel="stylesheet" />
   <title>Creative-IT-DMT</title>
 </head>
@@ -742,7 +745,7 @@
   <!-- Journey Roadmap Section End/habibur-->
 
   <!-- Our Students Shared their Stories (slider) Start/toba  -->
-      <section id="students-stories" class="sm:py-10 overflow-hidden">
+      <section id="students-stories" class=":py-10 overflow-hidden">
         <!-- Title -->
         <div class="container text-center">
           <h3 class="font-extrabold text-[30px] md:text-[56px] text-dmt-black1">
@@ -756,12 +759,12 @@
         </div>
 
         <!-- Slider -->
-        <div class="slider-wrapper overflow-hidden mt-10">
-          <div class="lg:animate-[slide_10s_infinite] block lg:flex gap-6">
+        <div class="overflow-hidden relative">
+          <div class="slider-wrapper flex gap-2 lg:gap-6 ml-0 transition-transform duration-700 ease-in-out">
 
             <!-- Profile one start  -->
             <div
-              class="card  sm:w-2xl bg-dmt-yellow2">
+              class="card  w-full px-5 shrink-0 bg-dmt-yellow2">
               <div class="xl:w-68.5 xl:h-57">
                 <img src="/src/assets/images/sliderImage/profileImgOne.png" alt="profileImgTwo.png" />
               </div>
@@ -794,7 +797,7 @@
 
             <!-- Profile two start  -->
             <div
-              class="card  sm:w-2xl bg-dmt-green2">
+              class="card  w-full px-5 shrink-0 bg-dmt-green2">
               <div class="xl:w-68.5 xl:h-57">
                 <img src="/src/assets/images/sliderImage/profileImgTwo.png" alt="profileImgTwo.png" />
               </div>
@@ -826,7 +829,7 @@
             <!-- Profile two end  -->
 
             <!-- Profile three start  -->
-            <div class="card  sm:w-2xl bg-dmt-blue2">
+            <div class="card  w-full px-5 shrink-0 bg-dmt-blue2">
               <div class="xl:w-68.5 xl:h-57">
                 <img src="/src/assets/images/sliderImage/profileImgThree.png" alt="profileImgThree.png" />
               </div>
@@ -860,19 +863,11 @@
     </div>
     </div>
 
-    <!-- Indicator -->
-    <div class="relative flex justify-center mt-8 gap-2">
-      <div class="indicator-line"></div>
-      <div class="indicator-line"></div>
-      <div class="indicator-line"></div>
-
-      <div class="active-indicator lg:animate-[indicatorMove_10s_infinite]"></div>
-    </div>
   </section>
   <!-- Our Students Shared their Stories (slider) End/toba  -->
 
   <!-- Ready to Start Your Career start/faysal -->
-  <section id="Carrer" class="container">
+  <section id="Carrer" class="container mt-2.5 sm-mt-0">
     <div class="rounded-[14px] border border-blue-400 p-10 bg-center bg-cover bg-no-repeat" style="background-image: url('./src/assets/images/career/bg-DarkGradient.png');">
 
     <div class="lg:flex lg:gap-16.5 items-center justify-between lg:py-17.5">
@@ -1017,11 +1012,21 @@
       <div class="space-y-4">
 
         <!-- Item -->
-        <div class="bg-dmt-blue3 rounded-[14px] px-5 py-4 border border-dmt-blue1">
-          <button class="w-full flex justify-between items-center font-semibold text-left">
+        <details class="group bg-dmt-blue3 rounded-[14px] px-5 py-4 border border-dmt-blue1">
+          <summary class="cursor-pointer list-none w-full flex justify-between items-center font-semibold text-left">
             <span>What services does your company provide?</span>
-            <img src="./src/assets/images/faq/faq-minus.svg" alt="">
-          </button>
+            <span class="relative w-5 h-5">
+
+  <!-- Plus Icon -->
+  <img src="./src/assets/images/faq/faq-plus.svg"
+       class="absolute inset-0 w-5 h-5 group-open:hidden" />
+
+  <!-- Minus Icon -->
+  <img src="./src/assets/images/faq/faq-minus.svg"
+       class="absolute inset-0 w-5 h-5 hidden group-open:block" />
+
+</span>
+          </summary>
 
           <div class="mt-3 text-gray-600 leading-[1.7]">
             <p>
@@ -1029,39 +1034,99 @@
               project-based learning to help students and professionals grow.
             </p>
           </div>
-        </div>
+        </details>
 
         <!-- Item -->
-        <div class="bg-dmt-blue3 rounded-[14px] px-5 py-4 border border-dmt-blue2">
-          <button class="w-full flex justify-between items-center font-semibold text-left">
-            <span>Do you offer online courses?</span>
-            <img src="./src/assets/images/faq/faq-plus.svg" alt="">
-          </button>
-        </div>
+        <details class="group bg-dmt-blue3 rounded-[14px] px-5 py-4 border border-dmt-blue2">
+          <summary class="cursor-pointer list-none w-full flex justify-between items-center font-semibold text-left">
+            <span>Can I be successfull doing online classes?</span>
+            <span class="relative w-5 h-5">
+
+  <!-- Plus Icon -->
+  <img src="./src/assets/images/faq/faq-plus.svg"
+       class="absolute inset-0 w-5 h-5 group-open:hidden" />
+
+  <!-- Minus Icon -->
+  <img src="./src/assets/images/faq/faq-minus.svg"
+       class="absolute inset-0 w-5 h-5 hidden group-open:block" />
+
+</span>
+          </summary>
+          <div class="mt-3 text-gray-600 leading-[1.7]">
+            <p>
+              The quality of our online and offline classes is the same. If you follow our guidelines properly and practice in the right way, you will definitely be successful.
+            </p>
+          </div>
+        </details>
 
         <!-- Item -->
-        <div class="bg-dmt-blue3 rounded-[14px] px-5 py-4 border border-dmt-blue2">
-          <button class="w-full flex justify-between items-center font-semibold text-left">
+        <details class="group bg-dmt-blue3 rounded-[14px] px-5 py-4 border border-dmt-blue2">
+          <summary class="cursor-pointer list-none w-full flex justify-between items-center font-semibold text-left">
             <span>Are certificates provided after completion?</span>
-            <img src="./src/assets/images/faq/faq-plus.svg" alt="">
-          </button>
-        </div>
+            <span class="relative w-5 h-5">
+
+  <!-- Plus Icon -->
+  <img src="./src/assets/images/faq/faq-plus.svg"
+       class="absolute inset-0 w-5 h-5 group-open:hidden" />
+
+  <!-- Minus Icon -->
+  <img src="./src/assets/images/faq/faq-minus.svg"
+       class="absolute inset-0 w-5 h-5 hidden group-open:block" />
+
+</span>
+          </summary>
+          <div class="mt-3 text-gray-600 leading-[1.7]">
+            <p>
+              Yes, you will receive a certificate if you successfully complete the course. You can also get a certification from the Govt Board of Technical Education by attending an assessment exam.
+            </p>
+          </div>
+        </details>
 
         <!-- Item -->
-        <div class="bg-dmt-blue3 rounded-[14px] px-5 py-4 border border-dmt-blue2">
-          <button class="w-full flex justify-between items-center font-semibold text-left">
-            <span>How can I contact support?</span>
-            <img src="./src/assets/images/faq/faq-plus.svg" alt="">
-          </button>
-        </div>
+        <details class="group bg-dmt-blue3 rounded-[14px] px-5 py-4 border border-dmt-blue2">
+          <summary class="cursor-pointer list-none w-full flex justify-between items-center font-semibold text-left">
+            <span>Why is the course fee high?</span>
+            <span class="relative w-5 h-5">
+
+  <!-- Plus Icon -->
+  <img src="./src/assets/images/faq/faq-plus.svg"
+       class="absolute inset-0 w-5 h-5 group-open:hidden" />
+
+  <!-- Minus Icon -->
+  <img src="./src/assets/images/faq/faq-minus.svg"
+       class="absolute inset-0 w-5 h-5 hidden group-open:block" />
+
+</span>
+          </summary>
+          <div class="mt-3 text-gray-600 leading-[1.7]">
+            <p>
+              Our course fee is high for the additional services that we provide to all of our students. Paying once you get a lifetime opportunity to seek any career advice or help from us. With the course module, you get lab facilities and 24/7 online support so that you can reach us at your convenient time. In addition, we provide you with internship facilities for hands-on experience.
+            </p>
+          </div>
+        </details>
 
         <!-- Item -->
-        <div class="bg-dmt-blue3 rounded-[14px] px-5 py-4 border border-dmt-blue2">
-          <button class="w-full flex justify-between items-center font-semibold text-left">
+        <details class="group bg-dmt-blue3 rounded-[14px] px-5 py-4 border border-dmt-blue2">
+          <summary class="cursor-pointer list-none w-full flex justify-between items-center font-semibold text-left">
             <span>How can I join the seminar?</span>
-            <img src="./src/assets/images/faq/faq-plus.svg" alt="">
-          </button>
-        </div>
+            <span class="relative w-5 h-5">
+
+  <!-- Plus Icon -->
+  <img src="./src/assets/images/faq/faq-plus.svg"
+       class="absolute inset-0 w-5 h-5 group-open:hidden" />
+
+  <!-- Minus Icon -->
+  <img src="./src/assets/images/faq/faq-minus.svg"
+       class="absolute inset-0 w-5 h-5 hidden group-open:block" />
+
+</span>
+          </summary>
+          <div class="mt-3 text-gray-600 leading-[1.7]">
+            <p>
+              Please click on this link to register for the seminar https://www.creativeitinstitute.com/free-seminar You will be notified regarding the date and time through a phone call before the seminar.
+            </p>
+          </div>
+        </details>
 
       </div>
 
@@ -1085,10 +1150,10 @@
    <!-- Top Footer -->
   <div class="flex flex-col lg:flex-row lg:justify-between gap-10 px-2.5">
     
-    <img src="./src/assets/images/footer/footer-logo.png" alt="" class="mx-auto lg:mx-0">
+    <img src="./src/assets/images/footer/footer-logo.png" alt="" class="w-32 sm:w-40 md:w-48 lg:w-52 xl:w-60 h-auto mx-auto lg:mx-0">
     <!-- footer contact part -->
     <div>
-      <h3 class="text-base leading-[150%] font-semibold text-center">
+      <h3 class="text-sm sm:text-base leading-[150%] font-semibold text-center">
         For any queries, feel free to contact us
       </h3>
 
@@ -1117,8 +1182,8 @@
 
       </div>
     </div>
-    <div class="text-center">
-      <p class="font-semibold text-base leading-[150%]">Download App</p>
+    <div class="text-center -mt-6">
+      <p class="font-medium sm:font-semibold text-sm sm:text-base leading-[150%]">Download App</p>
 
       <div class="flex gap-4 mt-4 justify-center">
         <div class="flex gap-4 p-2.5 rounded-[10px] bg-white">
@@ -1140,13 +1205,13 @@
 
 
 <!-- Branches Row 1 -->
-<div class="lg:mt-16 flex flex-col md:flex-row justify-between">
+<div class="lg:mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-between">
 
   <!-- item 1 -->
   <div class="w-71 mx-auto text-center">
     <div class="flex items-center gap-2 lg:px-10.75 ml-4 md:ml-0">
       <img src="./src/assets/images/footer/location.svg" alt="">
-      <h3 class="text-base font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
+      <h3 class="text-sm sm:text-base font-medium sm:font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
         Head Office - Main Campus
       </h3>
     </div>
@@ -1158,10 +1223,10 @@
   </div>
 
   <!-- item 2 -->
-  <div class="w-71 mx-auto mt-10 md:mt-0 text-center">
+  <div class="w-71 mx-auto mt-2.5 md:mt-0 text-center">
     <div class="flex items-center gap-2 px-2 lg:px-10.75">
       <img src="./src/assets/images/footer/location.svg" alt="">
-      <h3 class="text-base font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
+      <h3 class="text-sm sm:text-base font-medium sm:font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
         Campus 02 - Dhanmondi
       </h3>
     </div>
@@ -1173,10 +1238,10 @@
   </div>
 
   <!-- item 3 -->
-  <div class="w-71 mx-auto mt-10 md:mt-0 text-center">
+  <div class="w-71 mx-auto mt-2.5 md:mt-0 text-center">
     <div class="flex items-center gap-2 px-15 lg:px-[80.5px]">
       <img src="./src/assets/images/footer/location.svg" alt="">
-      <h3 class="text-base font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
+      <h3 class="text-sm sm:text-base font-medium sm:font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
         Mirpur Branch
       </h3>
     </div>
@@ -1191,12 +1256,12 @@
 
 
 <!-- Branches Row 2 -->
-<div class="flex flex-col md:flex-row md:flex-wrap flex-nowrap gap-12 mt-16 justify-between lg:pb-10">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mt-2.5 sm:mt-16 lg:pb-10">
 
   <div class="w-59.5 mx-auto">
     <div class="flex items-center gap-2 px-[59.5px]">
       <img src="./src/assets/images/footer/location.svg" alt="">
-      <h3 class="text-base font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
+      <h3 class="text-sm sm:text-base font-medium sm:font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
         Uttara Branch
       </h3>
     </div>
@@ -1207,10 +1272,10 @@
     </p>
   </div>
 
-  <div class="w-69.75 mx-auto">
+  <div class="w-69.75 mx-auto -mt-8 sm:mt-0">
     <div class="flex items-center gap-2 px-[59.5px]">
       <img src="./src/assets/images/footer/location.svg" alt="">
-      <h3 class="text-base font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
+      <h3 class="text-sm sm:text-base font-medium sm:font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
         Chattogram Branch
       </h3>
     </div>
@@ -1221,10 +1286,10 @@
     </p>
   </div>
 
-  <div class="w-48.5 mx-auto">
+  <div class="w-48.5 mx-auto -mt-8 sm:mt-0">
     <div class="flex items-center gap-2 px-[16.5px]">
       <img src="./src/assets/images/footer/location.svg" alt="">
-      <h3 class="text-base font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
+      <h3 class="text-sm sm:text-base font-medium sm:font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
         Panchagarh Branch
       </h3>
     </div>
@@ -1234,10 +1299,10 @@
     </p>
   </div>
 
-  <div class="w-66 mx-auto">
+  <div class="w-66 mx-auto -mt-8 sm:mt-0">
     <div class="flex items-center gap-2 px-[67.5px]">
       <img src="./src/assets/images/footer/location.svg" alt="">
-      <h3 class="text-base font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
+      <h3 class="text-sm sm:text-base font-medium sm:font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
         Canada Branch
       </h3>
     </div>
@@ -1253,6 +1318,59 @@
   </div>
 </footer>
 <!-- footer end/ayesha -->
+
+
+<!-- jquery -->
+ <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+<!-- slick slider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+$(document).ready(function () {
+
+  const slider = $(".slider-wrapper");
+  const cards = $(".card");
+
+  let index = 0;
+  let interval;
+
+  function getCardWidth() {
+    return cards.eq(0).outerWidth(true);
+  }
+
+  function slide() {
+    const cardWidth = getCardWidth();
+
+    index++;
+
+    if (index >= cards.length) {
+      index = 0;
+    }
+
+    slider.css(
+      "transform",
+      "translateX(" + -(cardWidth * index) + "px)"
+    );
+  }
+
+  function start() {
+    interval = setInterval(slide, 3000);
+  }
+
+  function reset() {
+    clearInterval(interval);
+    index = 0;
+    slider.css("transform", "translateX(0)");
+    start();
+  }
+
+  start();
+
+  $(window).on("resize", function () {
+    reset();
+  });
+
+});
+</script>
 
   </body>
 </html>
