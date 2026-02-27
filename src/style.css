@@ -58,25 +58,33 @@
   .input-icon {
     @apply absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5;
   }
-  
+
   .form-animation {
     @apply relative p-0.5 rounded-2xl overflow-hidden
     before:content-['']
     before:absolute
     before:top-1/2
     before:left-1/2
-    before:w-[400px]
+    before:w-100
     before:h-[250%]
     before:-translate-x-1/2
     before:-translate-y-1/2
-
     before:animate-[spin_6s_linear_infinite] before:blur-[20px]
     after:content-['']
     after:absolute
-    after:inset-[3px]
+    after:inset-0.75
     after:bg-white
     after:rounded-2xl;
   }
+
+    @keyframes rotateBorder {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
 
   /* custom transition for  the chevron */
   details[open] .chevron {
@@ -119,6 +127,20 @@
   /* ACTIVE INDICATOR */
   .active-indicator {
     @apply absolute bottom-0 -ml-25 justify-center w-10 h-1 bg-blue-600 rounded-full hidden lg:flex;
+  }
+
+    /* FAQ Accordion */
+  .faq-item {
+    @apply bg-[#f8fbff] rounded-[14px] px-5.5 py-4.5 border border-[#e0eaff] w-[872px];
+  }
+
+  .faq-btn {
+    @apply w-full flex justify-between items-center font-semibold;
+  }
+
+    .footer-bg {
+    @apply bg-[#0B2440] rounded-t-[20px] md:rounded-t-[40px]
+    rounded-t-[80px] xl:rounded-t-[100px]
   }
 
   /* ================= SLIDE KEYFRAME ================= */
@@ -164,19 +186,5 @@
       transform: translateX(0);
     }
   }
-  /* Footer Background */
-  .footer-bg {
-    background: #0b2545;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-  }
 
-  /* FAQ Accordion */
-  .faq-item {
-    @apply bg-[#f8fbff] rounded-[14px] px-5.5 py-4.5 border border-[#e0eaff] w-[872px];
-  }
-
-  .faq-btn {
-    @apply w-full flex justify-between items-center font-semibold;
-  }
 }

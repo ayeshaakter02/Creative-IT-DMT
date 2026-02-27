@@ -13,14 +13,15 @@
     rel="stylesheet" />
   <!-- google fonts -->
   <link href="/src/style.css" rel="stylesheet" />
-  <title>dmt</title>
+  <title>Creative-IT-DMT</title>
 </head>
 
 <body>
   <!-- hero part start/ayesha -->
 <section id="hero">
     <!-- navbar start/ayesha -->
-    <nav class="container">
+     <div class="w-full mx-auto fixed top-0 left-0 z-50 bg-white">
+<nav class="container ">
       <div class="flex justify-between items-center py-4 px-4 lg:px-0">
         <!-- Logo -->
         <div class="w-28 sm:w-36 lg:w-44">
@@ -28,7 +29,7 @@
         </div>
 
         <!-- Desktop Menu -->
-        <ul class="hidden sm:flex gap-2.5 md:gap-6 lg:gap-10 text-sm lg:text-base font-semibold">
+        <ul class="hidden sm:flex gap-2 md:gap-5 lg:gap-10 text-sm lg:text-base font-semibold">
           <li><a href="#">Title</a></li>
           <li><a href="#">Title</a></li>
           <li><a href="#">Title</a></li>
@@ -36,49 +37,62 @@
           <li><a href="#">Title</a></li>
         </ul>
         <!-- Desktop Button -->
-        <button class="btn px-3 sm:px-4 hidden sm:flex">
+        <button class="btn px-3 mr-5 lg:mr-0 sm:px-4 hidden sm:flex">
           Get Enroll
           <span class="ml-1">
             <img src="./src/assets/images/hero/btn-arrow-right.svg" alt="">
           </span>
         </button>
 
-        <button class="sm:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M4 6l16 0" />
-            <path d="M4 12l16 0" />
-            <path d="M4 18l16 0" />
-          </svg>
-        </button>
-      </div>
-      <!-- Mobile Menu -->
-      <div class="sm:hidden flex flex-col px-4">
-        <ul class="text-sm lg:text-base font-semibold">
-          <li class="my-1.5"><a href="#">Title</a></li>
-          <li class="my-1.5"><a href="#">Title</a></li>
-          <li class="my-1.5"><a href="#">Title</a></li>
-          <li class="my-1.5"><a href="#">Title</a></li>
-          <li class="my-1.5"><a href="#">Title</a></li>
-        </ul>
-        <!-- mobile Button -->
-        <button class="btn px-3 flex w-32.5">
-          Get Enroll
-          <span class="ml-1">
-            <img src="./src/assets/images/hero/btn-arrow-right.svg" alt="">
-          </span>
-        </button>
+<div class="relative sm:hidden">
+
+  <input type="checkbox" id="drop1" class="peer hidden">
+
+  <label for="drop1" class="cursor-pointer flex items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+      viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2">
+      <path d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
+  </label>
+
+  <!-- DROPDOWN -->
+  <div class="absolute -right-5 top-full mt-4 w-screen 
+              bg-white shadow-lg rounded-lg
+              text-sm font-semibold transform transition-all duration-500 ease-out
+              opacity-0 -translate-x-10
+              peer-checked:opacity-100 
+              peer-checked:translate-x-0">
+
+    <ul class="text-center">
+      <li class="px-4 py-3 hover:bg-gray-100">Title</li>
+      <li class="px-4 py-3 hover:bg-gray-100">Title</li>
+      <li class="px-4 py-3 hover:bg-gray-100">Title</li>
+      <li class="px-4 py-3 hover:bg-gray-100">Title</li>
+      <li class="px-4 py-3 hover:bg-gray-100">Title</li>
+    </ul>
+
+    <button class="btn flex justify-center items-center w-40 mb-4 mx-auto">
+      Get Enroll
+      <span class="ml-1">
+        <img src="./src/assets/images/hero/btn-arrow-right.svg" alt="">
+      </span>
+    </button>
+
+  </div>
+
+</div>
       </div>
     </nav>
+     </div>
+    
     <!-- navbar end/ayesha -->
     <!-- banner start/ayesha -->
         <section id="banner"
-  class="relative bg-cover bg-center bg-no-repeat"
+  class="relative bg-cover bg-center bg-no-repeat sm:pt-35.5"
   style="background-image: url('./src/assets/images/hero/hero-bg.png');"
 >
-  <div class="container px-4 pt-12 pb-35.25">
+  <div class="container px-4 pt-20 sm:pt-0 pb-10 lg:pb-35.25">
     
     <div class="grid lg:grid-cols-2 gap-16.5 items-center">
 
@@ -94,7 +108,7 @@
         </div>
 
         <!-- Heading -->
-        <h1 class="mt-2 text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-[120%] text-dmt-blue1 italic">Digital Marketing</span>
+        <h1 class="mt-2 text-3xl sm:text-5xl lg:text-7xl font-extrabold leading-[120%] text-dmt-blue1 italic">Digital Marketing</span>
         </h1>
 
         <!-- Label Buttons -->
@@ -116,7 +130,7 @@
         </div>
 
         <!-- Description -->
-        <p class="mt-5 text-dmt-black2 max-w-xl mx-auto lg:mx-0 text-lg font-normal">
+        <p class="mt-5 text-dmt-black2 max-w-xl mx-auto lg:mx-0 text-sm sm:text-lg font-normal">
           Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. Felis posuere
               maecenas interdum sit cras. Egestas sed nunc sodales arcu mi ut volutpat lobortis. Diam diam tellus
               ultricies. Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est at non suscipit. Felis
@@ -139,7 +153,7 @@
       </div>
 
       <!-- RIGHT FORM -->
-<div class="justify-center flex mt-5 sm:mt-0">
+<div class="justify-center flex">
 
   <div
     class="form-animation before:bg-[conic-gradient(from_45deg,#F88513,white,#34A853,white,#F88513)]"
@@ -148,7 +162,7 @@
     <!-- Inner Card -->
     <div class="relative z-10 bg-white rounded-2xl shadow-2xl p-6 sm:p-8">
 
-      <h3 class="text-[28px] font-semibold text-center text-dmt-black1 leading-[150%]">
+      <h3 class="text-lg sm:text-[28px] font-semibold text-center text-dmt-black1 leading-[150%]">
         Book Your Seat Now
       </h3>
 
@@ -224,7 +238,7 @@
   <!-- hero part end/ayesha -->
 
   <!-- Section-3 Start : Promotion Video/saima -->
-  <section id="promotion-video" class="relative flex flex-col items-center justify-center pt-15 pb-35">
+  <section id="promotion-video" class="relative flex flex-col items-center justify-center sm:pt-15 pb-5 sm:pb-20 lg:pb-35">
     <!-- Background Start -->
 
     <div class="hidden absolute inset-0 z-0 sm:flex items-center justify-center pointer-events-none -mt-30">
@@ -238,7 +252,7 @@
       <!-- Video Header Start -->
 
       <header class="md:w-150 md:mx-auto lg:w-4xl text-center mb-10">
-        <h1 class="text-4xl lg:text-5xl xl:text-[56px] font-extrabold mb-6 text-dmt-blue1 italic">Promotion Video</h1>
+        <h1 class="text-3xl lg:text-5xl xl:text-[56px] font-extrabold mb-6 text-dmt-blue1 italic">Promotion Video</h1>
         <p class="max-w-4xl mx-auto text-dmt-black2 text-sm xl:text-[18px]">
           Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu
           est at non. Felis posuere <br />
@@ -263,7 +277,7 @@
       <!-- Video End -->
 
       <!-- Video Footer Start -->
-      <div class="max-w-285 md:w-150 lg:w-180 xl:w-285 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-left px-5 sm:px-0">
+      <div class="max-w-285 md:w-150 lg:w-180 xl:w-285 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-left px-5 md:px-0">
         <article>
           <h3 class="text-[20px] md:text-[14px] lg:text-[18px] xl:text-[20px] font-bold mb-3 text-dmt-black2">
             Some Text
@@ -304,9 +318,12 @@
   <!-- Section-3 End : Promotion Video/saima -->
 
   <!-- Section-4 Start : Course Module/saima -->
-  <section id="course-module" class="min-h-screen flex flex-col items-center justify-center py-20 lg:py-35 px-6 bg-cover bg-center bg-no-repeat" style="background-image: url('src/assets/images/course-module/module-bg.png');">
+  <section id="course-module" class="items-center justify-center py-10 lg:pb-35 px-6 ">
+    <div class="absolute mx-auto w-full mx-w-400 -z-50 left-0 right-0">
+      <img src="./src/assets/images/course-module/module-bg.png" alt="">
+    </div>
 
-    <div class="container z-10">
+    <div class="container pt-10 sm:pt-26.25">
 
     <!-- Module Header Start -->
 
@@ -324,7 +341,7 @@
       
     <div class="max-w-285 md:w-150 lg:w-180 xl:w-285 mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
       
-      <details class="group border border-dmt-blue1 rounded-2xl bg-white overflow-hidden transition-all duration-300 open:ring-1 open:ring-blue-300" open>
+      <details class="sticky top-10 group border border-dmt-blue1 rounded-2xl bg-white overflow-hidden transition-all duration-300 open:ring-1 open:ring-blue-300" open>
         <summary class="flex items-center justify-between p-5 cursor-pointer list-none">
           <div class="flex items-center gap-2 md:gap-4">
             <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-dmt-blue2">
@@ -344,7 +361,7 @@
         </div>
       </details>
 
-      <details class="group border border-dmt-brand2 rounded-2xl bg-white overflow-hidden transition-all duration-300 open:ring-1 open:ring-blue-300" open>
+      <details class="sticky top-20 sm:top-10 group border border-dmt-brand2 rounded-2xl bg-white overflow-hidden transition-all duration-300 open:ring-1 open:ring-blue-300" open>
         <summary class="flex items-center justify-between p-5 cursor-pointer list-none">
           <div class="flex items-center gap-2 md:gap-4">
             <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-dmt-brand3">
@@ -364,7 +381,7 @@
         </div>
       </details>
 
-      <details class="group border border-dmt-yellow1 rounded-2xl bg-white overflow-hidden transition-all duration-300">
+      <details class="sticky top-30 sm:top-30 group border border-dmt-yellow1 rounded-2xl bg-white overflow-hidden transition-all duration-300">
         <summary class="flex items-center justify-between p-5 cursor-pointer list-none">
           <div class="flex items-center gap-2 md:gap-4">
             <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-dmt-yellow2">
@@ -384,7 +401,7 @@
         </div>
       </details>
 
-      <details class="group border border-dmt-green1 rounded-2xl bg-white overflow-hidden transition-all duration-300">
+      <details class="sticky top-40 sm:top-30 group border border-dmt-green1 rounded-2xl bg-white overflow-hidden transition-all duration-300">
         <summary class="flex items-center justify-between p-5 cursor-pointer list-none">
           <div class="flex items-center gap-2 md:gap-4">
             <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-dmt-green2">
@@ -404,7 +421,7 @@
         </div>
       </details>
 
-      <details class="group border border-dmt-blue1 rounded-2xl bg-white overflow-hidden transition-all duration-300 open:ring-1 open:ring-blue-300">
+      <details class="sticky top-50 sm:top-40 group border border-dmt-blue1 rounded-2xl bg-white overflow-hidden transition-all duration-300 open:ring-1 open:ring-blue-300">
         <summary class="flex items-center justify-between p-5 cursor-pointer list-none">
           <div class="flex items-center gap-2 md:gap-4">
             <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-dmt-blue2">
@@ -424,7 +441,7 @@
         </div>
       </details>
 
-      <details class="group border border-dmt-brand2 rounded-2xl bg-white overflow-hidden transition-all duration-300">
+      <details class="sticky top-60 sm:top-40 group border border-dmt-brand2 rounded-2xl bg-white overflow-hidden transition-all duration-300">
         <summary class="flex items-center justify-between p-5 cursor-pointer list-none">
           <div class="flex items-center gap-2 md:gap-4">
             <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-dmt-brand3">
@@ -444,7 +461,7 @@
         </div>
       </details>
 
-      <details class="group border border-dmt-yellow1 rounded-2xl bg-white overflow-hidden transition-all duration-300">
+      <details class="sticky top-70 sm:top-50 group border border-dmt-yellow1 rounded-2xl bg-white overflow-hidden transition-all duration-300">
         <summary class="flex items-center justify-between p-5 cursor-pointer list-none">
           <div class="flex items-center gap-2 md:gap-4">
             <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-dmt-yellow2">
@@ -464,7 +481,7 @@
         </div>
       </details>
 
-      <details class="group border border-dmt-green1 rounded-2xl bg-white overflow-hidden transition-all duration-300">
+      <details class="sticky top-80 sm:top-50 group border border-dmt-green1 rounded-2xl bg-white overflow-hidden transition-all duration-300">
         <summary class="flex items-center justify-between p-5 cursor-pointer list-none">
           <div class="flex items-center gap-2 md:gap-4">
             <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-dmt-green2">
@@ -506,17 +523,17 @@
   <!-- Section-4 End : Course Module/saima -->
 
   <!-- Eye Catchy Digital Marketing Banner  Start/habibur -->
-  <section id="eye-catchy" class="relative py-41.75 w-full flex items-center justify-center overflow-hidden bg-[#D9D9D9]">
+  <section id="eye-catchy" class="relative py-20 sm:py-30 lg:py-41.75 w-full flex items-center justify-center overflow-hidden bg-[#D9D9D9]">
     <div class="container">
       <div class="absolute inset-0">
-      <img src="./src/assets/images/eye/docImage.jpg" alt="Marketing Banner" class="w-full h-full object-cover" />
+      <img src="./src/assets/images/eye/docImage.png" alt="Marketing Banner" class="sm:w-full h-full object-cover" />
       <div class="absolute inset-0 bg-[#1F2024]/70"></div>
 
     </div>
 
     <div class="relative z-10 px-4">
       <div class="text-center">
-        <h1 class="text-white text-[56px] font-bold">
+        <h1 class="text-white text-[30px] lg:text-[56px] font-bold">
           Eye Catchy Digital Marketing Banner
         </h1>
       </div>
@@ -528,7 +545,7 @@
 
   <!-- Journey Roadmap Section Start/habibur-->
 <section id="journey"
-  class="py-16 md:py-35 bg-white bg-cover bg-no-repeat bg-position-[center_50px]"
+  class="py-16 lg:py-35 bg-white bg-cover bg-no-repeat bg-position-[center_50px]"
   style="background-image: url('./src/assets/images/journey/Journey-bg.png');"
 >
   <div class="container px-4">
@@ -550,27 +567,24 @@
     <!-- Grid Wrapper -->
       <!-- Top 3 Cards -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-
         <!-- Card 1 -->
-        <div class="relative rounded-3xl p-0.5 overflow-hidden">
-
-  <!-- Animated Border -->
-  <div
-    class="absolute inset-0 overflow-hidden rounded-3xl
-
-before:content-['']
-before:absolute
-before:top-[-150%]
-before:left-1/2
-before:w-0
-before:h-[300%]
-before:-translate-x-1/2
-before:bg-[conic-gradient(from_45deg,#34A853,white,#34A853)]
-before:animate-[spin_10s_linear_infinite]"
-  ></div>
+        <div class="before:content-['']
+    before:absolute
+    before:top-1/2
+    before:left-1/2
+    before:w-80
+    before:h-[250%]
+    before:-translate-x-1/2
+    before:-translate-y-1/2
+    before:animate-[spin_2s_linear_infinite] before:blur-[20px]
+    after:content-['']
+    after:absolute
+    after:inset-0.75
+    after:bg-white
+    after:rounded-2xl; before:bg-[conic-gradient(from_45deg,#4285fa,white,#4285fa)] relative rounded-2xl p-0.5 overflow-hidden">
 
   <!-- Card -->
-  <div class="relative z-10 p-6 md:p-8 rounded-3xl bg-white shadow-sm">
+  <div class="relative z-10 p-6 md:p-8 rounded-2xl bg-white shadow-sm">
 
     <div class="flex items-center gap-4 mb-4">
       <span class="text-2xl md:text-3xl font-bold text-dmt-blue1 bg-dmt-blue2 rounded-[10px] py-1 px-5">
@@ -590,9 +604,22 @@ before:animate-[spin_10s_linear_infinite]"
 
   </div>
 </div>
-
         <!-- Card 2 -->
-        <div class="before:bg-[conic-gradient(from_45deg,#34A853,white,#34A853)] p-6 md:p-8 rounded-3xl bg-white shadow-sm">
+         <div class="before:content-['']
+    before:absolute
+    before:top-1/2
+    before:left-1/2
+    before:w-80
+    before:h-[250%]
+    before:-translate-x-1/2
+    before:-translate-y-1/2
+    before:animate-[spin_2s_linear_infinite] before:blur-[20px]
+    after:content-['']
+    after:absolute
+    after:inset-0.75
+    after:bg-white
+    after:rounded-2xl; before:bg-[conic-gradient(from_45deg,#34A853,white)] relative rounded-3xl p-0.5 overflow-hidden">
+          <div class="relative z-10 p-6 md:p-8 rounded-2xl bg-white shadow-sm">
           <div class="flex items-center gap-4 mb-4">
             <span class="text-2xl md:text-3xl font-bold text-dmt-green1 bg-dmt-green2 rounded-[10px] py-1 px-4.5">2</span>
             <div class="h-0.5 flex-1 bg-linear-to-r from-dmt-green1 to-transparent opacity-40"></div>
@@ -605,12 +632,26 @@ before:animate-[spin_10s_linear_infinite]"
             eget amet faucibus diam.
           </p>
         </div>
-
+         </div>
         <!-- Card 3 -->
-<div class="form-animatin before:bg-[conic-gradient(from_45deg,#F88513,white,#F88513)] p-6 md:p-8 rounded-3xl  bg-white shadow-sm
+         <div class="before:content-['']
+    before:absolute
+    before:top-1/2
+    before:left-1/2
+    before:w-80
+    before:h-[250%]
+    before:-translate-x-1/2
+    before:-translate-y-1/2
+    before:animate-[spin_2s_linear_infinite] before:blur-[20px]
+    after:content-['']
+    after:absolute
+    after:inset-0.75
+    after:bg-white
+    after:rounded-2xl; before:bg-[conic-gradient(from_45deg,#f88513,white,#f88513)] relative rounded-2xl overflow-hidden  p-6 md:p-8 bg-white shadow-sm
             sm:col-span-2 md:col-span-2 lg:col-span-1
             sm:max-w-md md:max-w-md lg:max-w-full
             mx-auto lg:mx-0">
+<div class="relative z-10">
 
   <div class="flex items-center gap-4 mb-4">
     <span class="text-2xl md:text-3xl font-bold text-dmt-yellow1 bg-dmt-yellow2 rounded-[10px] py-1 px-4.5">3</span>
@@ -626,15 +667,28 @@ before:animate-[spin_10s_linear_infinite]"
     eget amet faucibus diam.
   </p>
 </div>
-        
-
+         </div>
       </div>
 
       <!-- Bottom 2 Cards -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
         <!-- Card 4 -->
-        <div class="p-6 md:p-8 rounded-3xl border-2 border-dmt-brand3 bg-white shadow-sm">
+         <div class="before:content-['']
+    before:absolute
+    before:top-1/2
+    before:left-1/2
+    before:w-80
+    before:h-[250%]
+    before:-translate-x-1/2
+    before:-translate-y-1/2
+    before:animate-[spin_2s_linear_infinite] before:blur-[20px]
+    after:content-['']
+    after:absolute
+    after:inset-0.75
+    after:bg-white
+    after:rounded-2xl; before:bg-[conic-gradient(from_45deg,#df3636,white,#df3636)] relative rounded-2xl p-0.5 overflow-hidden">
+          <div class="relative z-10 p-6 md:p-8 rounded-2xl border-2 border-dmt-brand3 bg-white shadow-sm">
           <div class="flex items-center gap-4 mb-4">
             <span class="text-2xl md:text-3xl font-bold text-dmt-brand2 bg-dmt-brand3 rounded-[10px] py-1 px-4.25">4</span>
             <div class="h-0.5 flex-1 bg-linear-to-r from-dmt-brand2 to-transparent opacity-40"></div>
@@ -647,9 +701,25 @@ before:animate-[spin_10s_linear_infinite]"
             eget amet faucibus diam.
           </p>
         </div>
+         </div>
+        
 
         <!-- Card 5 -->
-        <div class="p-6 md:p-8 rounded-3xl border-2 border-dmt-blue2 bg-white shadow-sm">
+         <div class="before:content-['']
+    before:absolute
+    before:top-1/2
+    before:left-1/2
+    before:w-60
+    before:h-[250%]
+    before:-translate-x-1/2
+    before:-translate-y-1/2
+    before:animate-[spin_2s_linear_infinite] before:blur-[20px]
+    after:content-['']
+    after:absolute
+    after:inset-0.75
+    after:bg-white
+    after:rounded-[20px]; before:bg-[conic-gradient(from_45deg,#4285fa,white,#4285fa)] relative rounded-[20px] p-0.5 overflow-hidden">
+          <div class="relative z-10 p-6 md:p-8 rounded-[20px] border-2 border-dmt-blue2 bg-white shadow-sm">
           <div class="flex items-center gap-4 mb-4">
             <span class="text-2xl md:text-3xl font-bold text-dmt-blue1 bg-dmt-blue2 rounded-[10px] py-1 px-4.5">5</span>
             <div class="h-0.5 flex-1 bg-linear-to-r from-dmt-blue1 to-transparent opacity-40"></div>
@@ -662,6 +732,8 @@ before:animate-[spin_10s_linear_infinite]"
             eget amet faucibus diam.
           </p>
         </div>
+         </div>
+        
 
       </div>
 
@@ -670,13 +742,13 @@ before:animate-[spin_10s_linear_infinite]"
   <!-- Journey Roadmap Section End/habibur-->
 
   <!-- Our Students Shared their Stories (slider) Start/toba  -->
-      <section id="students-stories" class="py-10 overflow-hidden">
+      <section id="students-stories" class="sm:py-10 overflow-hidden">
         <!-- Title -->
         <div class="container text-center">
-          <h3 class="font-extrabold text-[40px] md:text-[56px] text-dmt-black1">
+          <h3 class="font-extrabold text-[30px] md:text-[56px] text-dmt-black1">
             Our Students <span class="text-dmt-blue1 italic">Shared their Stories</span>
           </h3>
-          <p class="py-5 lg:w-200 mx-auto text-base leading-[150%] text-dmt-black2 mb-4">
+          <p class="py-5 text-base leading-[150%] text-dmt-black2 mb-4">
             Lorem ipsum dolor sit amet consectetur. Orci est elit tincidunt eu est
         at non suscipit. Felis posuere maecenas interdum sit cras. Egestas sed
         nunc sodales arcu mi ut volutpat lobortis.
@@ -689,12 +761,12 @@ before:animate-[spin_10s_linear_infinite]"
 
             <!-- Profile one start  -->
             <div
-              class="card  w-2xl bg-dmt-yellow2">
+              class="card  sm:w-2xl bg-dmt-yellow2">
               <div class="xl:w-68.5 xl:h-57">
                 <img src="/src/assets/images/sliderImage/profileImgOne.png" alt="profileImgTwo.png" />
               </div>
               <div class="-ml-5">
-                <div class="flex justify-start xl:justify-start lg:justify-center gap-2">
+                <div class="flex justify-center sm:justify-start xl:justify-start lg:justify-center gap-2">
                   <p class="text-xl font-semibold text-dmt-black1">5.0</p>
                   <!-- Icons start  -->
                   <div class="flex items-center gap-x-1.5">
@@ -722,12 +794,12 @@ before:animate-[spin_10s_linear_infinite]"
 
             <!-- Profile two start  -->
             <div
-              class="card  w-2xl bg-dmt-green2">
+              class="card  sm:w-2xl bg-dmt-green2">
               <div class="xl:w-68.5 xl:h-57">
                 <img src="/src/assets/images/sliderImage/profileImgTwo.png" alt="profileImgTwo.png" />
               </div>
               <div class="-ml-5">
-                <div class="flex justify-start xl:justify-start lg:justify-center gap-2">
+                <div class="flex justify-center sm:justify-start xl:justify-start lg:justify-center gap-2">
                   <p class="text-xl font-semibold text-dmt-black1">5.0</p>
                   <!-- Icons start  -->
                   <div class="flex items-center gap-x-1.5">
@@ -754,12 +826,12 @@ before:animate-[spin_10s_linear_infinite]"
             <!-- Profile two end  -->
 
             <!-- Profile three start  -->
-            <div class="card  w-2xl bg-dmt-blue2">
+            <div class="card  sm:w-2xl bg-dmt-blue2">
               <div class="xl:w-68.5 xl:h-57">
                 <img src="/src/assets/images/sliderImage/profileImgThree.png" alt="profileImgThree.png" />
               </div>
               <div class="-ml-5">
-                <div class="flex justify-start xl:justify-start lg:justify-center gap-2">
+                <div class="flex justify-center sm:justify-start xl:justify-start lg:justify-center gap-2">
                   <p class="text-xl font-semibold text-dmt-black1">5.0</p>
                   <!-- Icons start  -->
                   <div class="flex items-center gap-x-1.5">
@@ -919,7 +991,7 @@ before:animate-[spin_10s_linear_infinite]"
 </section>
 
 <!-- faq section start/goni -->
-<section id="faq" class="py-20 bg-white relative overflow-hidden">
+<section id="faq" class="py-8 lg:py-20 bg-white relative overflow-hidden">
 
     <!-- Heading -->
     <div class="container text-center mb-2.5 sm:mb-14">
@@ -1007,14 +1079,14 @@ before:animate-[spin_10s_linear_infinite]"
 <!-- faq section end/goni -->
 
 <!-- footer start/ayesha -->
-    <footer class="footer-bg bg-[#0B2440] text-white pt-16 pb-10">
+    <footer class="footer-bg bg-[#0B2440] text-white pt-8 lg:pt-16 pb-10">
   <div class="container">
 
    <!-- Top Footer -->
   <div class="flex flex-col lg:flex-row lg:justify-between gap-10 px-2.5">
     
     <img src="./src/assets/images/footer/footer-logo.png" alt="" class="mx-auto lg:mx-0">
-
+    <!-- footer contact part -->
     <div>
       <h3 class="text-base leading-[150%] font-semibold text-center">
         For any queries, feel free to contact us
@@ -1024,28 +1096,27 @@ before:animate-[spin_10s_linear_infinite]"
         <div>
           <div class="flex gap-2">
             <img src="./src/assets/images/footer/phone-call.svg" alt="">
-            <p class="text-base font-normal leading-[150%]">017XX XXX XXX</p>
+            <p class="text-sm sm:text-base font-normal leading-[150%]">017XX XXX XXX</p>
           </div>
           <div class="flex gap-2">
             <img src="./src/assets/images/footer/phone-call.svg" alt="">
-            <p class="text-base font-normal leading-[150%]">017XX XXX XXX</p>
+            <p class="text-sm sm:text-base font-normal leading-[150%]">017XX XXX XXX</p>
           </div>
         </div>
 
         <div>
           <div class="flex gap-2">
             <img src="./src/assets/images/footer/mail.svg" alt="">
-            <p class="text-base font-normal leading-[120%]">supposemail.com</p>
+            <p class="text-sm sm:text-base font-normal leading-[120%]">supposemail.com</p>
           </div>
           <div class="flex gap-2">
             <img src="./src/assets/images/footer/mail.svg" alt="">
-            <p class="text-base font-normal leading-[120%]">supposemail.com</p>
+            <p class="text-sm sm:text-base font-normal leading-[120%]">supposemail.com</p>
           </div>
         </div>
 
       </div>
     </div>
-
     <div class="text-center">
       <p class="font-semibold text-base leading-[150%]">Download App</p>
 
@@ -1069,11 +1140,11 @@ before:animate-[spin_10s_linear_infinite]"
 
 
 <!-- Branches Row 1 -->
-<div class="mt-16 flex flex-col md:flex-row justify-between">
+<div class="lg:mt-16 flex flex-col md:flex-row justify-between">
 
   <!-- item 1 -->
-  <div class="w-71 text-center">
-    <div class="flex items-center gap-2 px-[33.5]">
+  <div class="w-71 mx-auto text-center">
+    <div class="flex items-center gap-2 lg:px-10.75 ml-4 md:ml-0">
       <img src="./src/assets/images/footer/location.svg" alt="">
       <h3 class="text-base font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
         Head Office - Main Campus
@@ -1087,8 +1158,8 @@ before:animate-[spin_10s_linear_infinite]"
   </div>
 
   <!-- item 2 -->
-  <div class="w-71 text-center">
-    <div class="flex items-center gap-2 px-10.75">
+  <div class="w-71 mx-auto mt-10 md:mt-0 text-center">
+    <div class="flex items-center gap-2 px-2 lg:px-10.75">
       <img src="./src/assets/images/footer/location.svg" alt="">
       <h3 class="text-base font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
         Campus 02 - Dhanmondi
@@ -1102,8 +1173,8 @@ before:animate-[spin_10s_linear_infinite]"
   </div>
 
   <!-- item 3 -->
-  <div class="w-71 text-center">
-    <div class="flex items-center gap-2 px-[80.5px]">
+  <div class="w-71 mx-auto mt-10 md:mt-0 text-center">
+    <div class="flex items-center gap-2 px-15 lg:px-[80.5px]">
       <img src="./src/assets/images/footer/location.svg" alt="">
       <h3 class="text-base font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
         Mirpur Branch
@@ -1120,7 +1191,7 @@ before:animate-[spin_10s_linear_infinite]"
 
 
 <!-- Branches Row 2 -->
-<div class="flex flex-col md:flex-row md:flex-wrap flex-nowrap gap-12 mt-16 justify-between pb-10">
+<div class="flex flex-col md:flex-row md:flex-wrap flex-nowrap gap-12 mt-16 justify-between lg:pb-10">
 
   <div class="w-59.5 mx-auto">
     <div class="flex items-center gap-2 px-[59.5px]">
