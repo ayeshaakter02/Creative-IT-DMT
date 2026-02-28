@@ -32,7 +32,7 @@
 
 @layer components {
   .btn {
-    @apply py-3 sm:py-2.5 items-center md:text-base text-sm xl:text-lg bg-dmt-blue1 text-white font-medium leading-[120%] rounded-[10px];
+    @apply py-3 sm:py-2.5 items-center md:text-base text-sm xl:text-lg bg-dmt-blue1 text-white font-medium leading-[120%] rounded-[10px] cursor-pointer;
   }
   .banner-label {
     @apply flex items-center gap-2 px-3 py-2 text-sm font-normal border rounded-[10px] transition-all duration-200 leading-[120%];
@@ -59,56 +59,67 @@
     @apply absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5;
   }
 
+  .form-animation {
+    @apply relative p-0.5 rounded-2xl overflow-hidden
+    before:content-['']
+    before:absolute
+    before:top-1/2
+    before:left-1/2
+    before:w-100
+    before:h-[250%]
+    before:-translate-x-1/2
+    before:-translate-y-1/2
+    before:animate-[spin_6s_linear_infinite] before:blur-[20px]
+    after:content-['']
+    after:absolute
+    after:inset-0.75
+    after:bg-white
+    after:rounded-2xl;
+  }
+
+    @keyframes rotateBorder {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
   /* CARD STYLE */
-.card {
-  @apply w-full lg:w-[calc((100%-48px)/3)] shrink-0 p-6 rounded-2xl text-center md:text-start;
-}
+  .card {
+    @apply w-[648px] mx-auto  
+         shrink-0 rounded-2xl 
+         p-4 mt-5 
+         border-dmt-gray3 border-[0.5px]
 
-/* INDICATOR LINE */
-.indicator-line {
-  @apply w-10 h-1 bg-gray-300 rounded-full hidden lg:block;
-}
+         grid
+         grid-cols-1
+         sm:grid-cols-2
+         lg:grid-cols-1
+         xl:grid-cols-2
 
-/* ACTIVE INDICATOR */
-.active-indicator {
-  @apply absolute bottom-0 -ml-25 justify-center w-10 h-1 bg-blue-600 rounded-full hidden lg:flex;
-}
+         place-items-center
+         sm:place-items-start
+         lg:place-items-center
+         xl:place-items-start
 
-/* ================= SLIDE KEYFRAME ================= */
-@keyframes slide {
-  0%, 30% {
-    transform: translateX(0);
+         text-center
+         sm:text-start
+         lg:text-center
+         xl:text-start;
+  }
+    /* FAQ Accordion */
+  .faq-item {
+    @apply bg-[#f8fbff] rounded-[14px] px-5.5 py-4.5 border border-[#e0eaff] w-[872px];
   }
 
-  35%, 65% {
-    transform: translateX(calc(-1 * (100% / 3 + 16px)));
+  .faq-btn {
+    @apply w-full flex justify-between items-center font-semibold;
   }
 
-  70%, 95% {
-    transform: translateX(calc(-2 * (100% / 3 + 16px)));
+    .footer-bg {
+    @apply bg-[#0B2440] rounded-t-[20px] md:rounded-t-[40px]
+    rounded-t-[80px] xl:rounded-t-[100px]
   }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-/* ================= INDICATOR KEYFRAME ================= */
-@keyframes indicatorMove {
-  0%, 30% {
-    transform: translateX(0);
-  }
-
-  35%, 65% {
-    transform: translateX(48px);
-  }
-
-  70%, 95% {
-    transform: translateX(96px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
 }
