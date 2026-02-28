@@ -86,18 +86,9 @@
       }
     }
 
-  /* custom transition for  the chevron */
-  details[open] .chevron {
-    transform: rotate(180deg);
-  }
-  /* hide the default marker */
-  summary::-webkit-details-marker {
-    display: none;
-  }
-
   /* CARD STYLE */
   .card {
-    @apply w-full mx-auto xl:w-[calc((100%-48px)/3)] 
+    @apply w-[648px] mx-auto  
          shrink-0 rounded-2xl 
          p-4 mt-5 
          border-dmt-gray3 border-[0.5px]
