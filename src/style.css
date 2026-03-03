@@ -179,7 +179,7 @@
   /* footer  */
       .footer-bg {
     @apply bg-[#0B2440] rounded-t-[20px] md:rounded-t-[40px]
-    lg:rounded-t-[80px] xl:rounded-t-[100px] text-white mt-35 pt-8 lg:pt-16 pb-10
+    lg:rounded-t-[80px] xl:rounded-t-[100px] text-white mt-10 lg:mt-35 pt-8 lg:pt-16 pb-10
   }
   .footer-heading {
     @apply font-medium sm:font-semibold text-sm sm:text-base leading-[150%] font-roboto text-center
