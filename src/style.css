@@ -126,7 +126,13 @@
   .faq-minus {
     @apply absolute inset-0 hidden group-open:block 
   }
-
+  /* footer  */
+  .footer-heading {
+    @apply font-medium sm:font-semibold text-sm sm:text-base leading-[150%] font-roboto text-center
+  }
+  .footer-contact {
+    @apply text-[12px] sm:text-base font-normal leading-[120%] font-roboto
+  }
     @keyframes rotateBorder {
       from {
         transform: rotate(0deg);
