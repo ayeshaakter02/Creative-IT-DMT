@@ -17,75 +17,73 @@
   <!-- hero part start/ayesha -->
 <section id="hero">
     <!-- navbar start/ayesha -->
-     <div class="w-full mx-auto px-8 fixed top-0 left-0 z-50 bg-white">
-<nav class="container">
-      <div class="flex justify-between items-center py-4  lg:px-0">
-        <!-- Logo -->
-        <div class="w-28 sm:w-36 lg:w-44 xl:w-54.5 h-auto">
-          <img src="./src/assets/images/hero/logo.png" alt="Logo" class="" />
-        </div>
+<div class="fixed top-0 left-0 w-full bg-white z-50 shadow-sm">
+  <nav class="container mx-auto px-6">
+    <div class="flex justify-between items-center py-4">
 
-        <!-- Desktop Menu -->
-        <ul class="hidden font-roboto lg:w-81.25 sm:flex gap-2 lg:gap-0 md:justify-between text-sm lg:text-base font-semibold leading-[150%]">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <!-- Desktop Button -->
-        <button class="btn px-3 mr-5 lg:mr-0 sm:px-4 hidden sm:flex">
-          Get Enroll
-          <span class="ml-1">
-            <img src="./src/assets/images/hero/btn-arrow-right.svg" alt="">
-          </span>
-        </button>
-
-<div class="relative sm:hidden">
-
-  <input type="checkbox" id="drop1" class="peer hidden">
-
-  <label for="drop1" class="cursor-pointer flex items-center">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-      viewBox="0 0 24 24" fill="none"
-      stroke="currentColor" stroke-width="2">
-      <path d="M4 6h16M4 12h16M4 18h16"/>
-    </svg>
-  </label>
-
-  <!-- DROPDOWN -->
-  <div class="absolute -right-15 top-full mt-4 w-screen justify-center items-center 
-              bg-white shadow-lg rounded-lg
-              text-sm font-semibold transform transition-all duration-500 ease-out
-              opacity-0 -translate-x-10
-              peer-checked:opacity-100 
-              peer-checked:translate-x-0">
-
-    <ul class="text-center">
-      <li class="px-4 py-3 hover:bg-gray-100">Home</li>
-      <li class="px-4 py-3 hover:bg-gray-100">About</li>
-      <li class="px-4 py-3 hover:bg-gray-100">Blog</li>
-      <li class="px-4 py-3 hover:bg-gray-100">Service</li>
-      <li class="px-4 py-3 hover:bg-gray-100">Contact</li>
-    </ul>
-
-    <button class="btn flex justify-center items-center w-40 mb-4 mx-auto">
-      Get Enroll
-      <span class="ml-1">
-        <img src="./src/assets/images/hero/btn-arrow-right.svg" alt="">
-      </span>
-    </button>
-
-  </div>
-
-</div>
+      <!-- Logo -->
+      <div class="w-32">
+        <img src="./src/assets/images/hero/logo.png" alt="Logo">
       </div>
-    </nav>
-     </div>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden font-roboto lg:w-81.25 sm:flex gap-2 lg:gap-0 md:justify-between text-sm lg:text-base font-semibold leading-[150%]">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <button class="btn px-3 mr-5 lg:mr-0 sm:px-4 hidden sm:flex">
+        Get Enroll
+      </button>
+
+      <!-- Mobile Menu -->
+      <div class="sm:hidden">
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+        <!-- Hamburger -->
+        <label for="menu-toggle" class="cursor-pointer z-50 relative">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </label>
+
+        <!-- Full Screen Overlay Menu -->
+        <div class="absolute left-0 top-full w-full bg-white
+            flex flex-col items-center justify-center
+            space-y-6 py-8 text-lg font-semibold
+            transform -translate-y-5 opacity-0
+            transition duration-300
+            peer-checked:translate-y-0
+            peer-checked:opacity-100">
+
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Service</a>
+          <a href="#">Contact</a>
+
+          <button class="btn flex justify-center items-center w-40 mb-4 mx-auto">
+            Get Enroll
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+  </nav>
+</div>
     <!-- navbar end/ayesha -->
     <!-- banner start/ayesha -->
         <section id="banner"
-  class="relative bg-cover bg-center bg-no-repeat sm:pt-35.5"
+  class="relative bg-cover bg-center bg-no-repeat sm:pt-35.5 px-2.5 xl:px-0"
   style="background-image: url('./src/assets/images/hero/hero-bg.png');"
 >
   <div class="container pt-20 sm:pt-0">
@@ -108,7 +106,7 @@
         </h1>
 
         <!-- Label Buttons -->
-        <div class="lg:w-95 flex flex-wrap justify-center lg:justify-between gap-4 mt-5">
+        <div class="lg:w-95 flex flex-wrap justify-center lg:justify-between gap-1 lg:gap-4 mt-5">
           <button class="banner-label text-dmt-green1 border-dmt-green1 bg-dmt-green2">
             CTA Label
             <img src="./src/assets/images/hero/banner-heart-rate-monitor.svg" alt="">
@@ -204,7 +202,7 @@
         <!-- Submit -->
         <button
           type="submit"
-          class="btn text-sm sm:text-lg font-roboto font-medium flex justify-center w-85 sm:w-103.25 mt-6 mb-4 sm:py-4.25 px-5 sm:px-0"
+          class="btn text-sm sm:text-lg font-roboto font-medium flex justify-center mx-auto w-85 sm:w-103.25 mt-6 mb-4 sm:py-4.25 px-5 sm:px-0"
         >
           CTA Label Here
           <span>
@@ -222,6 +220,7 @@
   </div>
 
 </div>
+
 
     </div>
   </div>
@@ -745,11 +744,11 @@
         </div>
 
         <!-- Slider -->
-        <div class="overflow-hidden relative p-2.5 xl:p-0">
+        <div class="overflow-hidden relative p-2.5 lg:p-0">
           <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
 
             <!-- Profile one start  -->
-<div class="bg-dmt-yellow2 flex flex-row sm:flex-col lg:flex-row lg:items-start sm:justify-center items-start rounded-[20px] overflow-hidden p-4">
+<div class="bg-dmt-yellow2 flex flex-row sm:flex-col lg:flex-row lg:items-start sm:justify-center items-start rounded-[20px] overflow-hidden p-2 xl:p-4">
           <div class="w-full lg:w-[40%] flex justify-center">
             <img
               src="./src/assets/images/sliderImage/profileImgOne.png"
@@ -760,8 +759,8 @@
           <div class="w-full lg:w-[60%] pl-4 flex flex-col justify-center gap-y-2 mt-4 sm:mt-0 md:text-center lg:text-start">
             <div class="w-42.25 flex gap-1 xl:mb-2.5 md:mx-auto lg:mx-0 md:mt-2.5">
               <span class="students-stories-rate">5.0</span>
-              <!-- star rateing -->
-<div class="flex text-xs justify-center md:justify-center">
+              <!-- star rating  -->
+<div class="flex text-xs">
   <svg xmlns="http://www.w3.org/2000/svg"
        viewBox="0 0 24 24"
        class="w-5 h-5">
@@ -849,7 +848,7 @@
             <!-- Profile one end  -->
 
             <!-- Profile two start  -->
-<div class="bg-dmt-yellow2 flex flex-row sm:flex-col lg:flex-row lg:items-start sm:justify-center items-start rounded-[20px] overflow-hidden p-4">
+<div class="bg-dmt-yellow2 flex flex-row sm:flex-col lg:flex-row lg:items-start sm:justify-center items-start rounded-[20px] overflow-hidden p-2 xl:p-4">
           <div class="w-full lg:w-[40%] flex justify-center">
             <img
               src="./src/assets/images/sliderImage/profileImgTwo.png"
@@ -950,7 +949,7 @@
 
             <!-- Profile three start  -->
 <div class="bg-dmt-yellow2 flex flex-row sm:flex-col lg:flex-row lg:items-start sm:justify-center items-start 
-rounded-[20px] overflow-hidden p-4 
+rounded-[20px] overflow-hidden p-2 xl:p-4 
 md:col-span-2 md:mx-auto md:w-[70%] xl:col-span-1 xl:w-full">
           <div class="w-full lg:w-[40%] flex justify-center">
             <img
@@ -1055,10 +1054,10 @@ md:col-span-2 md:mx-auto md:w-[70%] xl:col-span-1 xl:w-full">
   </section>
   <!-- Our Students Shared their Stories (slider) End/toba  -->
   <!-- Ready to Start Your Career start/faysal -->
-  <section id="Carrer" class="container mt-2.5 lg:my-35 sm-mt-0">
+  <section id="Carrer" class="container mt-2.5 lg:my-35 sm-mt-0 px-2.5 lg:px-0">
     <div class="rounded-[20px] border border-dmt-blue1 bg-center bg-cover bg-no-repeat" style="background-image: url('./src/assets/images/career/bg-DarkGradient.png');">
 
-    <div class="lg:flex items-center justify-between py-5 sm:py-10 lg:pb-17.5 lg:pt-17.75 px-15.75">
+    <div class="lg:flex items-center gap-[50px] py-5 sm:py-10 lg:pb-17.5 lg:pt-17.75 px-15.75">
 
       <!-- ============ Left Part ============ -->
       <div class="text-center lg:text-start">
@@ -1092,7 +1091,7 @@ md:col-span-2 md:mx-auto md:w-[70%] xl:col-span-1 xl:w-full">
 
 
       <!-- ============ Right Form ============ -->
-<div class="justify-center flex">
+<div class="w-full">
 
   <div
     class="form-animation before:bg-[conic-gradient(from_45deg,#F88513,white,#34A853,white,#F88513)]"
@@ -1150,7 +1149,7 @@ md:col-span-2 md:mx-auto md:w-[70%] xl:col-span-1 xl:w-full">
         <!-- Submit -->
         <button
           type="submit"
-          class="btn text-sm sm:text-lg font-roboto font-medium flex justify-center w-85 sm:w-103.25 mt-6 mb-4 sm:py-4.25 px-5 sm:px-0"
+          class="btn text-lg font-roboto font-medium flex justify-center sm:w-60 xl:w-103.25 mt-6 mb-4 py-4.25 px-5 sm:px-0"
         >
           CTA Label Here
           <span>
@@ -1174,14 +1173,15 @@ md:col-span-2 md:mx-auto md:w-[70%] xl:col-span-1 xl:w-full">
 </section>
 
 <!-- faq section start/goni -->
-<section id="faq" class="flex gap-20 bg-white relative container mt-10 lg:mt-0">
-  <!-- Left Illustration -->
-  <div class="hidden absolute xl:block xl:-ml-20 mt-67 xl:-left-20 top-0">
-    <img src="./src/assets/images/faq/faq-left.png" alt="FAQ illustration" class="max-w-62.5 xl:max-w-[320px]">
+<section id="faq" class=" bg-white  mt-10 lg:mt-0 px-2.5 lg:px-0">
+  <div class="relative container">
+    <!-- Left Illustration -->
+  <div class="hidden absolute xl:block mt-67 xl:-left-20 top-0">
+    <img src="./src/assets/images/faq/faq-left.png" alt="FAQ illustration" class="w-50 xl:max-w-[320px]">
   </div>
 
     <!-- Heading -->
-    <div class="w-full lg:w-218 mx-auto">
+    <div class="max-w-218 mx-auto">
       <div class="text-center">
         <h2 class="common-title">
         Frequently Asked <span class="text-dmt-blue1 italic">Questions</span>
@@ -1312,9 +1312,11 @@ md:col-span-2 md:mx-auto md:w-[70%] xl:col-span-1 xl:w-full">
     </div>
 
   <!-- Right Illustration -->
-  <div class="hidden absolute xl:block xl:-mr-20 mt-67 xl:-right-20 top-0">
-    <img src="./src/assets/images/faq/faq-right.png" alt="Support illustration" class="max-w-62.5 xl:max-w-[320px]">
+  <div class="hidden absolute xl:block  mt-67 xl:-right-20 top-0">
+    <img src="./src/assets/images/faq/faq-right.png" alt="Support illustration" class="w-50 xl:max-w-[320px]">
   </div>
+  </div>
+  
 
 </section>
 <!-- faq section end/goni -->
@@ -1326,7 +1328,7 @@ md:col-span-2 md:mx-auto md:w-[70%] xl:col-span-1 xl:w-full">
    <!-- Top Footer -->
   <div class="flex flex-col lg:flex-row lg:justify-between gap-10 px-2.5">
     
-    <img src="./src/assets/images/footer/footer-logo.png" alt="footer-logo" class="w-50 sm:w-40 md:w-48 lg:w-52 xl:w-71 mt-2 h-auto xl:h-20 mx-auto lg:mx-0">
+    <img src="./src/assets/images/footer/footer-logo.png" alt="footer-logo" class="w-50 sm:w-40 md:w-48 lg:w-65 xl:w-71 mt-2 h-auto lg:h-20 mx-auto lg:mx-0">
     <!-- footer contact part -->
     <div>
       <h3 class="footer-heading ml-4 mb-2">
@@ -1383,10 +1385,10 @@ md:col-span-2 md:mx-auto md:w-[70%] xl:col-span-1 xl:w-full">
 
 
 <!-- Branches Row 1 -->
-<div class="lg:mt-16 lg:gap-x-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:justify-between">
+<div class="lg:mt-16 lg:gap-x-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:justify-between">
 
   <!-- item 1 -->
-  <div class="w-71 mx-auto text-center md:ml-4">
+  <div class="lg:w-71 mx-auto text-center md:ml-4">
     <div class="flex justify-center items-center gap-2 lg:px-10.75 ml-4 md:ml-0">
       <img src="./src/assets/images/footer/location.svg" alt="location.svg">
       <h3 class="text-sm sm:text-base font-medium sm:font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
@@ -1401,7 +1403,7 @@ md:col-span-2 md:mx-auto md:w-[70%] xl:col-span-1 xl:w-full">
   </div>
 
   <!-- item 2 -->
-  <div class="w-71 mx-auto mt-2.5 md:mt-0 text-center">
+  <div class="lg:w-71 mx-auto mt-2.5 md:mt-0 text-center">
     <div class="flex  justify-center items-center gap-2 px-2 lg:px-10.75">
       <img src="./src/assets/images/footer/location.svg" alt="location.svg">
       <h3 class="text-sm sm:text-base font-medium sm:font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
@@ -1416,7 +1418,7 @@ md:col-span-2 md:mx-auto md:w-[70%] xl:col-span-1 xl:w-full">
   </div>
 
   <!-- item 3 -->
-  <div class="lg:w-71 mx-auto mt-2.5 md:mt-0 text-center lg:ml-21">
+  <div class="lg:w-71 mx-auto mt-2.5 md:mt-0 text-center">
     <div class="flex items-center gap-2 px-15 lg:px-[80.5px]">
       <img src="./src/assets/images/footer/location.svg" alt="location.svg">
       <h3 class="text-sm sm:text-base font-medium sm:font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">
@@ -1436,7 +1438,7 @@ md:col-span-2 md:mx-auto md:w-[70%] xl:col-span-1 xl:w-full">
 <!-- Branches Row 2 -->
 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-12 mt-2.5 sm:mt-16 lg:pb-10">
 
-  <div class="w-59.5 mx-auto">
+  <div class="lg:w-59.5 mx-auto">
     <div class="flex items-center gap-2 px-[59.5px]">
       <img src="./src/assets/images/footer/location.svg" alt="location.svg">
       <h3 class="text-sm sm:text-base font-medium sm:font-semibold leading-[150%] text-dmt-gray2 whitespace-nowrap">

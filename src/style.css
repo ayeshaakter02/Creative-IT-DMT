@@ -28,10 +28,10 @@
 @layer base {
   .container {
     @apply max-w-285! mx-auto;
-    @variant lg{
-      padding : 0 10px;
-    }
-    
+  }
+  ul, ol {
+    @apply list-none;
+    padding-left: 0;
   }
 }
 
@@ -146,7 +146,7 @@
          xl:text-start;
   }
   .students-stories-img {
-    
+
   }
   .students-stories-rate {
     @apply text-xl font-semibold text-dmt-black1
@@ -155,10 +155,10 @@
     @apply text-sm text-dmt-black2 leading-[150%] pt-2.5 font-normal
   }
   .students-stories-name{
-    @apply text-xl font-semibold text-dmt-black1 mt-8 leading-[150%]
+    @apply text-xl font-semibold text-dmt-black1 sm:mt-8 leading-[150%]
   }
   .students-stories-batch {
-    @apply text-sm leading-[150%] font-normal
+    @apply text-sm leading-[150%] font-normal text-dmt-black2
   }
   /* faq */
   .faq-details {
@@ -187,8 +187,6 @@
   .footer-contact {
     @apply text-[12px] sm:text-base font-normal leading-[120%] font-roboto
   }
-
-
 
   .title{
     @apply text-3xl lg:text-5xl xl:text-[56px] font-extrabold mb-4 text-dmt-black1 leading-[120%];
