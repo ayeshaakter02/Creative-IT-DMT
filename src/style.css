@@ -41,8 +41,8 @@
   }
   /* banner */
 .banner-label {
-  @apply w-29 font-roboto flex items-center justify-center gap-2 
-         px-3 py-[9.5px] text-sm font-normal 
+  @apply lg:w-29 font-roboto flex items-center justify-center gap-2 
+        px-3 py-[9.5px] text-sm font-normal 
          border rounded-xl leading-[120%] whitespace-nowrap;
 }
 
